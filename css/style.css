@@ -1,0 +1,87 @@
+.jumbotron{
+    border-radius: 0;
+}
+input{
+    border: 1px solid #0d0d0d;
+    border-radius: 15px;
+    color: #0d0d0d;
+    width: 250px;
+}
+.logo{
+    height: 350px;
+}
+li{
+    color: #fff;
+}
+a:hover{
+    color: #ffde59;
+}
+h3{
+    color: #ffde59;
+}
+h4{
+    color: #ffde59;
+}
+.nav-link{
+    color: #fff;
+}
+p{
+    color: white;
+}
+legend{
+    color: #ffde59;
+}
+label{
+    color: #fff; 
+}
+#reservation{
+    background-image: url("../../media/examples/lizard.png");
+}
+.form-coordonnes{
+    
+}
+.form-reservation{
+    border: 1px solid #001a66;
+    width: 500px;
+    height: 550px;
+    padding: 10px;
+    margin: 0 auto;
+}
+#btn-envoyer{
+    height: 40px;
+    margin-left: 190px;
+    border-radius: 10px;
+}
+form{
+    border: 1px solid #001a66;
+    width: 500px;
+    height: 450px;
+    padding: 10px;
+    margin: 0 auto;
+}
+select{
+    color: #0d0d0d;
+}
+#btn-reserve{
+    margin-left: 190px;
+    border-radius: 10px;
+    height: 40px;
+}
+#numberOfChair{
+    width: 50px;
+    text-align: center;
+}
+#date{
+    text-align: center;
+    width: 200px;
+    margin-right: 100px;
+}
+#footer{
+    background-color: #0d0d0d;
+}
+select.country{
+    background-color: white;
+}
+.pointsuspension{
+    text-align: center;
+}
