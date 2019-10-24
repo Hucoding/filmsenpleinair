@@ -46,6 +46,7 @@ label{
     height: 550px;
     padding: 10px;
     margin: 0 auto;
+    
 }
 #btn-envoyer{
     height: 40px;
@@ -84,4 +85,10 @@ select.country{
 }
 .pointsuspension{
     text-align: center;
+}
+.nav-link{
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: "Open-Sans", sans-serif;
 }
