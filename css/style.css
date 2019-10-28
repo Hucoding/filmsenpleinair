@@ -1,94 +1,649 @@
-.jumbotron{
+
+.jumbotron {
     border-radius: 0;
 }
-input{
+
+input {
     border: 1px solid #0d0d0d;
     border-radius: 15px;
     color: #0d0d0d;
     width: 250px;
 }
-.logo{
+
+select {
+
+    background-color: #EBEEF1;
+    padding: 10px 30px;
+    margin-bottom: 12px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+.logo {
     height: 350px;
 }
-li{
+
+li {
     color: #fff;
 }
-a:hover{
+
+a:hover {
     color: #ffde59;
 }
-h3{
+
+h3 {
     color: #ffde59;
 }
-h4{
+
+h4 {
+
     color: #ffde59;
 }
-.nav-link{
+
+.nav-link {
+
+    text-transform: uppercase;
     color: #fff;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: "Open-Sans", sans-serif;
+
 }
-p{
+
+/* Responsive menu for mobile devices */
+.mobile-menu {
+
+    position:fixed; 
+    width: 100%; 
+    line-height: 300%; 
+    z-index:1000; 
+    background-color: white; 
+    display: inline-block;
+
+}
+
+p {
+
     color: white;
 }
-legend{
+
+legend {
+
     color: #ffde59;
 }
-label{
-    color: #fff; 
+
+/* Margin caroussel */
+.carousel slide carousel-fade {
+
+    margin-bottom: 0;
+
 }
-#reservation{
-    background-image: url("../../media/examples/lizard.png");
+
+/* Imgs caroussel */
+.d-block w-100 {
+
+    height: 650px;
+
 }
-.form-coordonnes{
-    
+
+/* Background color navbar */
+.navbar.navbar-expand-sm.justify-content-center {
+
+    background-color: #0d0d0d;
+
 }
-.form-reservation{
+
+/* Principal container */
+.principal-container {
+
+    color: #777;
+    background-image: linear-gradient(to right top, #050d37, #041863, #1b1f91, #3d20be, #6712eb); 
+    /*background-color:#001a66; */
+    text-align:center; 
+    padding: 50px 80px; 
+    text-align: justify; 
+
+}
+
+/* Container of "A L'AFFICHE" */
+.col-sm-12 {
+
+    text-align: left; 
+    margin-top: 10px; 
+    margin-bottom: 50px;
+
+}
+
+/* Title "A L'AFFICHE" */
+.mt-0 {
+
+    text-align: center; 
+    color: #ffde59;
+
+}
+
+/* Imgs of "A L'AFFICHE" */
+.col-sm-3 img {
+
+    height: 300px;
+    width: 250px; 
+    padding: 10px;
+
+}
+
+/* Title parallax "RESERVEZ DES MAINTENANT" */
+.caption span.border {
+
+    background-color: #001a66;
+    font-size: 25px;
+    color: #ffde59;
+
+}
+
+/* Containers under parallax */
+.under-parallax {
+
+    color: #777;
+    background-image: linear-gradient(to right top, #050d37, #041863, #1b1f91, #3d20be, #6712eb);
+    /*background-color: #001a66;*/
+    text-align: center; 
+    padding: 50px 80px;
+    text-align: justify;
+
+}
+
+/* Title "RESERVATION" "CONTACTEZ NOUS !" under-parallax */
+.under-parallax h3.mt-0 {
+
+    text-align: center;
+
+}
+
+.under-parallax p {
+
+    text-align: center;
+
+}
+
+/* Text in footer */
+.jumbotron.text-center {
+
+    margin-bottom: 0;
+
+}
+
+/* "RESERVATION" form */
+.reservation {
+
+    margin: 0;
+    padding: 50px;
+    width: auto;
+    background-color: #fff;
+    margin: 100px auto;
+    position: relative;
+
+}
+
+
+/* Title of "RESERVATION" */
+.title-reservation h1 {
+
+    clear: #535274;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    text-align: center;   
+}
+
+
+/* Label of "RSERVATION" */
+label {
+     color: black;
+}
+
+#container-reservation {
+    display: flex;
+}
+
+#block-inline {
+    display: flex;
+
+}
+
+.block {
+    width: 360px;
+    height: 50px;
+}
+
+/* "CONTACTEZ NOUS !" form */
+.contact-us {
+
+    margin: 0;
+    padding: 0;
+    width: 480px;
+    background-color: #fff;
+    padding: 50px;
+    margin: 100px auto;
+    position: relative;
+
+}
+
+/* Title of "CONTACTEZ NOUS !" */
+.title h1 {
+
+    clear: #535274;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* width of "CONTACTEZ NOUS !" */
+.form,
+.form-items {
+
+    width: 100%;
+
+}
+
+/* width-input of "CONTACTEZ NOUS !"  */
+.form-items .input {
+
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    background-color: #EBEEF1;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+/* width-height & others parameters for message input of "CONTACTEZ NOUS !" */
+.form-items .input-message {
+
+    height: 200px;
+    width: 100%;
+    background-color: #EBEEF1;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding: 15px;
+    resize: none;
+
+}
+
+/* Send button of "CONTACTEZ NOUS !"
+.btn-contact {
+
+    background: #827ffe;
+    text-align: center;
+    color: #fff;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+.btn-contact .fas {
+
+    margin-left: 15px;
+    font-size: 12px;
+
+}*/
+
+/* Send button of "CONTACTEZ NOUS !" NEW*/
+.button_cont{
+    margin-bottom: 15px;
+}
+
+.btn-contact {
+
+   border-radius: 4px;
+   background: linear-gradient(to right top, #2c48db, #135ce7, #006ff1, #0081f9, #0092ff) !important;
+   border: none;
+   border-radius: 25px;
+   color: #FFFFFF;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 12px;
+   padding: 15px;
+   width: 150px;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin: 5px;
+
+ }
+ .btn-contact span {
+
+   color: #FFFFFF;
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+
+ }
+ .btn-contact span:after {
+
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   color: white;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+
+ }
+ .btn-contact:hover span {
+
+   padding-right: 25px;
+
+ }
+ .btn-contact:hover span:after {
+
+   opacity: 1;
+   right: 0;
+
+ }
+
+.form-items {
+
+    position: relative;
+
+}
+
+.form-items .fas {
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #9A99AA;
+
+}
+
+/* social icons of "CONTACTEZ NOUS !"*/
+.social-icons {
+
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.social-icons div {
+
+    width: 60px;
+    height: 60px;
+    background: red;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.social-icons div .fab {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+/* Social icon Facebook of "CONTACTEZ NOUS !" */
+.social-icons div.facebook {
+
+    background: #5178D9;
+
+}
+
+.social-icons div.twitter {
+
+    background: #41CAF6;
+
+}
+
+.social-icons div.instagram {
+
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
+}
+
+#footer a {
+
+    padding: 10px;
+    border: 1px solid #ffde59;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffde59;
+    cursor: pointer;
+
+}
+
+#footer a:hover {
+
+    color: ;
+
+}
+
+/*.form-reservation {
+
     border: 1px solid #001a66;
     width: 500px;
     height: 550px;
     padding: 10px;
     margin: 0 auto;
     
-}
-#btn-envoyer{
+}*/
+
+#btn-envoyer {
+
     height: 40px;
     margin-left: 190px;
     border-radius: 10px;
+
 }
-form{
+
+form {
+
     border: 1px solid #001a66;
     width: 500px;
     height: 450px;
     padding: 10px;
     margin: 0 auto;
+
 }
-select{
+
+select {
+
     color: #0d0d0d;
+
 }
-#btn-reserve{
+
+#btn-reserve {
+
     margin-left: 190px;
     border-radius: 10px;
     height: 40px;
+
 }
-#numberOfChair{
-    width: 50px;
+
+#nombreplaces {
+
+    width: 20%;
     text-align: center;
 }
-#date{
+
+#date {
+
     text-align: center;
     width: 200px;
     margin-right: 100px;
+
 }
-#footer{
+
+#footer {
+
     background-color: #0d0d0d;
+
 }
-select.country{
+
+select.country {
+
     background-color: white;
+
 }
-.pointsuspension{
+
+.pointsuspension {
+
     text-align: center;
+
 }
-.nav-link{
-    text-transform: uppercase;
-    margin-left: 20px;
-    font-weight: bold;
-    font-family: "Open-Sans", sans-serif;
+
+/*faq*/
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #050d37, #041863, #1b1f91, #3d20be, #6712eb); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.faq-container {
+
+    width: 100%;
+    height: 900px;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+}
+
+.accordion-item {
+
+    background-color: #283042;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+
+}
+
+.accordion-link {
+
+    font-size: 1.6rem;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+    background-color: #283042;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+}
+
+.accordion-link i{
+
+    color: #e7d5ff;
+    padding: .5rem;
+
+
+}
+
+a.accordion-link {
+
+    text-decoration: none;
+
+}
+
+.accordion-link .fas.fa-minus {
+    display: none;
+}
+
+.answer {
+   max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #212838;
+    color: rgba(255,255,255,.6);
+    transition: max-height 650ms;
+
+}
+
+
+.answer::before {
+
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #006ff1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p {
+    color: rgba(255,255,255,.6);
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+
+.accordion-item:target .answer {
+
+    max-height: 20rem;
+
+}
+
+.accordion-item:target .accordion-link .fas.fa-plus {
+
+    display: none;
+
+}
+
+.accordion-item:target .accordion-link .fas.fa-minus {
+
+    display: block;
+
+}
+
+.faq-container h2 {
+
+    color: #fff;
+
+}
+
+div.faq-container {
+
+    height: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
