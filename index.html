@@ -5,26 +5,23 @@
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1">
+        <!-- Main title -->
         <title>Films en plein air - vivez l'expérience !</title>
+        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- Font Awesome -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- CCS for Parallax -->
         <link rel="stylesheet" href="./css/parallax.css"/>
-        <link rel="stylesheet" href="./css/general-title.css"/>
+        <!-- CSS for film swiper "FILMS A L'AFFICHE" -->
+        <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+        <!-- CSS File -->
         <link rel="stylesheet" href="./css/style.css"/>
 
     </head>
 
-<style type="text/css">
-    .navbar-toggler {
-        background-color: #FCFCFC;
-        position:fixed;
-        right:2%;top:2%;
-        z-index:1000;
-    }
-
-</style>
-
+    <!-- Sidebar menu for tablets & smartphones -->
     <body>
         <div class="content">
             <div id="sidebar">
@@ -37,14 +34,17 @@
             </div>
         </div>
         
-        <nav class="mobile-menu" >
-             <center>FILMS DE PLEIN AIR</center>
-            <button data-toggle=".content" type="button" style="float:right">
+        <!-- icon menu for tablets & Smartphones -->
+        <nav class="mobile-menu">
+            <center class="menu-title" style="">FILMS DE PLEIN AIR.
+                <button class="btn-programmation" id="button-menu" data-toggle=".content" type="button">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
+            </center>
+            
         </nav>
 
-      
+       <!-- Caroussel -->
         <div class="carousel slide carousel-fade" data-ride="carousel" >    
             
             <div class="carousel-caption">
@@ -61,7 +61,7 @@
 
             </div>
 
-            <!--INDICATOR-->
+            <!-- Indicator -->
             <ul class="carousel-indicators">
                 
                 <li data-target="./Images/the-terminator-affiche.jpg" data-slide-to="0" class="active"></li>
@@ -74,7 +74,7 @@
 
             </ul>
 
-            <!--SLIDE-->
+            <!-- Imgs for caroussel -->
             <div class="carousel-inner">
                 
                 <div class="carousel-item active">
@@ -93,7 +93,7 @@
                     <img src="./Images/star-wars-menace-fantome-affiche.jpg" class="d-block w-100" alt="affiche-film3">
                 </div>
 
-                <!-- LEFT/RIGHT -->
+                <!-- Left/Right icon for caroussel -->
                 <a class="carousel-control-prev" href="#presentation" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </a>
@@ -106,15 +106,19 @@
 
         </div>
            
-        <!--NAVBAR/MENU-->
+        <!-- Navbar - Menu -->
             <nav class="navbar navbar-expand-sm justify-content-center" style="">
+                
                 <button class="navbar-toggler" type="button" data-toggle=".content" id="sidebar-toggle">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                        
-                <div class="collapse-center navbar-collapse-center" id="collapsibleNavbar">
-                            
+                 
+                <div class="collapse-center navbar-collapse-center" id="collapsibleNavbar">              
                     <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
                                 
                         <li class="nav-item">
                             <a class="nav-link" href="#">À l'affiche</a>
@@ -129,190 +133,88 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="blog.html">Blog</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="#">Nous contacter</a>
                         </li>
-
                     </ul>
 
                 </div>
 
             </nav>
                  
-        <!--PRINCIPAL CONTAINER-->
+        <!--Principal container-->
         <div class="principal-container">
             
-            <div class="container">
+            <!--div class="container"-->
+            <h1 class="title-before-swiper"> Films à l'affiche </h1>
+
+                <p class="intro-swiper">
+                    Nous avons sélectionner le meilleurs du cinéma pour vous, venez profitez des films en plein air en famille, entre amis, ou en amoureux ! vous pouvez dés maintenant vous inscrire via notre formulaire de réservation.
+                    <br>Comment ça marche ? c'est très simple vous devez obligatoirement réservez votre place via le formulaire de réservation, pour que nous puissions prévoir en conséquence.
+                </p>
                     
-                <div class="col-sm-12">
-                        
-                    <h2 class="mt-0"> A L'AFFICHE </h2>
-
-                        <i>
-                            <p>
-                                Nous avons sélectionner le meilleurs du cinéma pour vous, venez profitez des films en plein air en famille, entre amis, ou en amoureux ! vous pouvez dés maintenant vous inscrire via notre formulaire de réservation.
-                                <br>Comment ça marche ? c'est très simple vous devez obligatoirement réservez votre place via le formulaire de réservation, pour que nous puissions prévoir en conséquence.
-                            </p>
-                        </i>
-
-                    </div> 
-                
-                    <div class="row">
-
-                        <div class="col-sm-3">
-
-                            <img src="./Images/retour-vers-le-futur.jpg" alt="...">
-
-                        </div>
-                    
-                        <div class="col-sm-7">
-
-                            <h3 class="mt-0"> RETOUR VERS LE FUTUR </h3>
-
-                                <p>
-                                    Retour vers le futur (Back to the Future) est un film de science-fiction américain réalisé par Robert Zemeckis, sorti en 1985.
-                                    L'intrigue relate le voyage dans le passé d'un adolescent, Marty McFly, à bord d'une machine à voyager dans le temps fabriquée par le docteur Emmett Brown à partir d'une voiture de modèle DeLorean DMC-12. Parti de l'année 1985 et propulsé en 1955, Marty, aidé du « Doc » de 1955, doit résoudre les paradoxes temporels ...
-                                </p>
-
-                            <a href="#" class="btn btn-primary">En savoir +</a>
-
-                        </div>
-
-                    <div class="col-sm-2">
-
-                        <h4>CASTING :</h4>
-
-                        <ul>
-
-                            <li>Micheal J Fox</li>
-                            <li>Christopher Lloyd</li>
-                            <li>Lea Thompson</li>
-                            <li>Crispin Glover</li>
-                            <li>Thomas F Wilson</li>
-
-                            <p class="pointsuspension">...</p>
-
-                        </ul>
-
-                    </div>
-
-                    <div class="col-sm-3">
-                        
-                        <img src="./Images/the-terminator.jpg" alt="...">
-
-                    </div>
-
-                    <div class="col-sm-7">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
                             
-                            <h3 class="mt-0"> THE TERMINATOR  </h3>
+                            <div class="swiper-slide">
+                                <div class="imgBx">
+                                    <img src="./Images/retour-vers-le-futur.jpg" alt="affiche-film-retour-vers-le-futur">
+                                </div>
+                                <div class="details">
+                                    <h3>Retour vers le futur <br> <span>Sience fiction</span></h3>
+                                </div>
+                                <center>
+                                    <a  id="savoir-plus" href="#" class="btn btn-danger">En savoir +</a>
+                                </center>
+                            </div>
 
-                                <p>
-                                    Terminator (The Terminator) est un film de science-fiction américain réalisé par James Cameron, sorti en 1984, avec notamment dans les rôles principaux Arnold Schwarzenegger, Michael Biehn et Linda Hamilton, entre autres.
-                                    Traitant du voyage dans le temps et de la menace que pourraient faire naître des robots créés par une superintelligence issue de la singularité technologique, ce film est devenu l'un des classiques du cinéma d’action et d’anticipation des années 1980 ...
-                                </p>
+                            <div class="swiper-slide">
+                                <div class="imgBx">
+                                    <img src="./Images/the-terminator.jpg" alt="affiche-film-the-terminator">
+                                </div>
+                                <div class="details">
+                                    <h3>The Terminator <br> <span> Sience fiction </span></h3>                          
+                                </div>
+                                <center>
+                                    <a  id="savoir-plus" href="#" class="btn btn-danger">En savoir +</a>
+                                </center>                            
+                            </div>
 
-                            <a href="#" class="btn btn-primary">En savoir +</a>
+                            <div class="swiper-slide">
+                                <div class="imgBx">
+                                    <img src="./Images/cinquieme-element.jpg" alt="affiche-film-cinquieme-element">
+                                </div>
+                                <div class="details">
+                                    <h3>Cinquième élément <br> <span> Sience fiction </span></h3>
+                                    <center>
+                                        <a  id="savoir-plus" href="#" class="btn btn-danger">En savoir +</a>
+                                    </center>
+                                </div>
+                            </div>
 
+                            <div class="swiper-slide">
+                                <div class="imgBx">
+                                    <img src="./Images/star-wars-menace-fantome.jpg" alt="affiche-film-star-wars-menace-fantome">
+                                </div>
+                                <div class="details">
+                                    <h3>Star wars : menace fantome <br> <span> Sience fiction</span></h3>
+                                    <center>
+                                        <a  id="savoir-plus" href="#" class="btn btn-danger">En savoir +</a>
+                                    </center>                                
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div class="col-sm-2">
-
-                        <h4>CASTING :</h4>
-
-                        <ul>
-
-                            <li>Arnold Schwarzenegger</li>
-                            <li>Linda Hamilton</li>
-                            <li>Michael Biehn</li>
-                            <li>Franco Columbu</li>
-                            <li>Earl Boen</li>
-
-                            <p class="pointsuspension">...</p>
-
-                        </ul>
-
+                    <div class="button_prog" align="center">
+                        <a class="btn-prog" href="#" target="_blank" rel="nofollow">
+                            <span><b>VOIR LA PROGRAMMATION</b></span>
+                        </a>
                     </div>
-
-                    <div class="col-sm-3">
-
-                        <img src="./Images/cinquieme-element.jpg" alt="...">
-
-                    </div>
-
-                    <div class="col-sm-7">
-
-                        <h3 class="mt-0"> LE CINQUIEME ELEMENT </h3>
-
-                            <p>
-                                Le Cinquième Élément est un film de science-fiction français coécrit et réalisé par Luc Besson, sorti en 1997.
-                                   Nommé aux César et aux Oscars, le film obtient trois César dont celui du meilleur réalisateur.L'histoire débute un jour de 1914, dans un temple d’Égypte ...
-                            </p>
-
-                        <a href="#" class="btn btn-primary">En savoir +</a>
-
-                    </div>
-
-                    <div class="col-sm-2">
-
-                        <h4>CASTING :</h4>
-
-                        <ul>
-
-                            <li>Milla Jovovich</li>
-                            <li>Bruce Willis</li>
-                            <li>Gary Oldman</li>
-                            <li>Chris Tucker</li>
-                            <li>Ian Holm</li>
-
-                            <p class="pointsuspension">...</p>
-
-                        </ul>
-
-                    </div>
-
-                    <div class="col-sm-3">
-
-                        <img src="./Images/star-wars-menace-fantome.jpg" alt="...">
-
-                    </div>
-                    
-                    <div class="col-sm-7">
-
-                        <h3 class="mt-0"> STAR WARS : MENACE FANTOME </h3>
-
-                            <p>
-                                Star Wars, épisode I : La Menace fantôme (Star Wars: Episode I – The Phantom Menace) est un film américain de science-fiction de type space opera sorti en 1999 écrit et réalisé par George Lucas.
-                               C'est le quatrième opus de la saga Star Wars par sa date de sortie, mais le premier dans l'ordre chronologique de l'histoire. Sorti seize ans après ...
-                           </p>
-
-                        <a href="#" class="btn btn-primary">En savoir +</a>
-
-                    </div>
-
-                    <!--CASTING-->
-                    <div class="col-sm-2">
-
-                        <h4>CASTING :</h4>
-
-                        <ul>
-                            <li>Natalie Portman</li>
-                            <li>Jake Lloyd</li>
-                            <li>Liam Neeson</li>
-                            <li>Ewan McGregor</li>
-                            <li>Ahmed Best</li>
-
-                            <p class="pointsuspension">...</p>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div>
 
                 </div>
 
@@ -328,11 +230,7 @@
 
                     <div class="under-parallax">
 
-                        <!--h3 class="mt-0"> </h3>
-
-                            <i>
-                                <p> Réserver gratuitement ICI vos places pour le festival du film en plein air ! <br/></p>
-                            </i-->
+                        <p class="intro-faq"> Réserver gratuitement ICI vos places pour le festival du film en plein air ! <br/></p>
                         
 
                         <!--SYSTEME DE RESERVATION-->
@@ -407,19 +305,14 @@
 
                     <div class="under-parallax">
 
-                        <!--h3 class="mt-0"> CONTACTEZ NOUS ! </h3>
-
-                        <br/>
-                        <br/>
-
-
-                            <div class="alert alert-warning" role="alert">
+                            <p class="intro-faq">
                                 Vous pouvez nous contacter si vous avez des questions complémentaires concernant le festival, l'organisation ect...<br />
                                 Vous pouvez également annuler votre réservation à tout moment directement via ce formulaire <br />
                                 nous sommes la pour répondre à votre demande n’hésitez pas à nous contacter directement via ce formulaire ci-dessous, et nous vous contacterons dans les plus bref délais.                            
-                            </div-->
+                            </p>
 
                         <div class="contact-us">
+                            
                             <div class="title-contact">
                                 <h1> CONTACTEZ NOUS ! </h1>
                             </div>
@@ -468,6 +361,7 @@
                                     <i class="fab fa-instagram"></i>
                                 </div>
                             </div>
+
                         </div>
 
                     </div>
@@ -475,9 +369,7 @@
                     <div class="bgimg-3">
 
                         <div class="caption">
-
-                            <span class="border"> FOIRE AUX QUESTIONS </span>
-
+                            <span class="border"> F.A.Q </span>
                         </div>
 
                     </div>
@@ -485,6 +377,7 @@
                     <div class="faq-under-parallax">
                         <section>
                             <div class="faq-container">
+                                <p class="intro-faq"><b>F.A.Q</b> pour frequently asked questions autrement dit, Questions Fréquemment Posées. Vous l’aurez compris, cette rubrique fait les questions et les réponses. Si vous n’avez pas trouvé votre bonheur parmi ces infos… Et que vous avez une autre interrogation, merci de nous écrire via le formulaire de contact ci-dessus</p>
                                 <div class="accordion">
                                     <div class="accordion-item" id="question1">
                                         <a class="accordion-link" href="#question1">
@@ -493,7 +386,7 @@
                                             <i class="fas fa-minus"></i>
                                         </a>
                                         <div class="answer">
-                                            <p>kjsqkhdkjsqhdkjshqkjdhskjhdjshqkjdhskjqhdkjsqhdkjshqdkjhsqkjdhkqsjh</p>
+                                            <p>il suffit de vous rendre sur le formulaire de réservation ci-dessus en d'y entrer vos informations : Nom, Prénom, Email, Téléphone, ainsi que la date pour laquelle vous voulez réserver et sélectionner le nombre de places que vous voulez réserver, et de séléctionner la séance qui vous intéresse.<br><br> Ensuite vous n'aurez plus qu'a cliquez sur <b>"JE RESERVE"</b>, vous allez donc recevoir votre billet par mail.</p>
                                         </div>
                                     </div>
 
@@ -505,7 +398,7 @@
                                             <i class="fas fa-minus"></i>
                                         </a>
                                         <div class="answer">
-                                            <p>kjsqkhdkjsqhdkjshqkjdhskjhdjshqkjdhskjqhdkjsqhdkjshqdkjhsqkjdhkqsjh</p>
+                                            <p>Oui nous limitons le nombres de places par réservation à 4 places.</p>
                                         </div>
                                     </div>
 
@@ -517,7 +410,7 @@
                                             <i class="fas fa-minus"></i>
                                         </a>
                                         <div class="answer">
-                                            <p>kjsqkhdkjsqhdkjshqkjdhskjhdjshqkjdhskjqhdkjsqhdkjshqdkjhsqkjdhkqsjh</p>
+                                            <p>Oui c'est possible pour les familles nombreuses nous vous recommandons toute fois de nous contacter directement via le formulaire de contact pour cette demande.</p>
                                         </div>
                                     </div>                                    
                                 </div>
@@ -530,7 +423,7 @@
                                             <i class="fas fa-minus"></i>
                                         </a>
                                         <div class="answer">
-                                            <p>kjsqkhdkjsqhdkjshqkjdhskjhdjshqkjdhskjqhdkjsqhdkjshqdkjhsqkjdhkqsjh</p>
+                                            <p>Oui c'est toute à fait possible des Food truck seront à votre disposition sur le festival.</p>
                                         </div>
                                     </div>
 
@@ -542,7 +435,7 @@
                                             <i class="fas fa-minus"></i>
                                         </a>
                                         <div class="answer">
-                                            <p>kjsqkhdkjsqhdkjshqkjdhskjhdjshqkjdhskjqhdkjsqhdkjshqdkjhsqkjdhkqsjh</p>
+                                            <p>Non les chiens ne sont malheureusement pas acceptés sur le Festival.</p>
                                         </div>
                                     </div>                                    
                                 </div>
@@ -555,17 +448,18 @@
                                             <i class="fas fa-minus"></i>
                                         </a>
                                         <div class="answer">
-                                            <p>kjsqkhdkjsqhdkjshqkjdhskjhdjshqkjdhskjqhdkjsqhdkjshqdkjhsqkjdhkqsjh</p>
+                                            <p>Oui nous allons privatiser un parking à l'occasion de l'événement nous vous indiquerons l'emplacement exact de celui-ci quelques jours avant l'événement. Pour cela rejoignez nous sur les réseaux pour être sur de ne rien louper !</p>
                                         </div>
                                     </div>                                    
-                                </div>                                      
                                 </div>
+
                             </div>
-                        </section>                        
+                        </section>   
 
                     </div>
-
                 </div>
+
+            </div>
 
             <!--FOOTER-->
             <div id="footer" class="jumbotron text-center" >
@@ -574,11 +468,8 @@
 
                 <a href="http://www.hugo-muttoni.com">Site réalisé par Hugo Muttoni</a>
                     
-            <div class="reseauxsociaux">
-                    
-            </div>
                
-        </div>
+            </div>
 
     </body>
 
@@ -592,109 +483,11 @@
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-        <style type="text/css">
-            .content {
-        position: absolute;
-        top: 0;
-        height: 100%;
-        left: 0;
-        -webkit-transition:  left 0.4s ease-in-out;
-        -moz-transition:  left 0.4s ease-in-out;
-        -ms-transition:  left 0.4s ease-in-out;
-        -o-transition:  left 0.4s ease-in-out;
-        transition:  left 0.4s ease-in-out;
-    }
- 
-.content.open-sidebar {
-    left: 240px;
-}
- 
-#sidebar {
-    position: absolute;
-    left: -240px;
-    background: #ff8c10;
-    border-right: 1px solid white;
-    opacity: 1;
-    z-index: 9999;
-    width: 240px;
-    height: 100%;
-    box-sizing: border-box;
-}
-#sidebar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-#sidebar ul li {
-    margin: 0;
-}
-#sidebar ul li a {
-    padding: 15px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    display: block;
-    border-bottom: 2px solid white;
-    -webkit-transition:  background 0.3s ease-in-out;
-    -moz-transition:  background 0.3s ease-in-out;
-    -ms-transition:  background 0.3s ease-in-out;
-    -o-transition:  background 0.3s ease-in-out;
-    transition:  background 0.3s ease-in-out;
-}
-#sidebar ul li:hover a {
-    background: rgb(242,242,242);
-    color:#ff8c10;
-}
-.main-content {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    position: relative;
-}
-.main-content .content{
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding-left: 60px;
-    width: 100%;
-}
-.main-content .content h1{
-    font-weight: 100;
-}
-.main-content .content p{
-    width: 100%;
-    line-height: 160%;
-}
-.main-content #sidebar-toggle {
-    background: #DF314D;
-    border-radius: 3px;
-    display: block;
-    position: relative;
-    padding: 10px 7px;
-    float: left;
-}
-#sidebar-toggle .bar{
-    display: block;
-    width: 18px;
-    margin-bottom: 3px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 1px;   
-}
-#sidebar-toggle .bar:last-child{
-     margin-bottom: 0;   
-}
+        <script src="./js/swiper.min.js"></script>
 
-        </style>
-<script type="text/javascript">
-    $(document).ready(function() {
-              $("[data-toggle]").click(function() {
-                var toggle_el = $(this).data("toggle");
-                $(toggle_el).toggleClass("open-sidebar");
-              });
-            });
-</script>
+        <script src="./js/swiper.js"></script>
+
+        <script src="./js/menu.js"></script>
+
     </footer>       
 </html>
