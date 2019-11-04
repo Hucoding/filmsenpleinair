@@ -21,141 +21,185 @@
 
     </head>
 
-    <!-- Sidebar menu for tablets & smartphones -->
-    <body>
-        <div class="content">
-            <div id="sidebar">
-                <ul>
-                    <li><a href="#">Menu 1</a></li>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Users</a></li>
-                    <li><a href="#">Sign Out</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <!-- icon menu for tablets & Smartphones -->
-        <nav class="mobile-menu">
-            <center class="menu-title" style="">FILMS DE PLEIN AIR.
-                <button class="btn-programmation" id="button-menu" data-toggle=".content" type="button">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </button>
-            </center>
+        <!-- Sidebar menu for tablets & smartphones 
+            <body>
+                <div class="content">
+                    <div id="sidebar">
+                        <ul>
+                            <li><a href="#">Menu 1</a></li>
+                            <li><a href="#">Explore</a></li>
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>-->
             
-        </nav>
+                <!-- icon menu for tablets & Smartphones 
+                <nav class="mobile-menu">
+                    <center class="menu-title">
+                        FILMS DE PLEIN AIR.-->
+                        <!-- <button class="btn-programmation" id="button-menu" data-toggle=".content" type="button">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </button>-->
+                            <button class="fdpa-nav-btn fdpa-open-btn">
+                                <i class="fas fa-bars"></i>
+                            </button>
 
-       <!-- Caroussel -->
-        <div class="carousel slide carousel-fade" data-ride="carousel" >    
-            
-            <div class="carousel-caption">
+                            <div class="fdpa-nav fdpa-nav-black">
+                                <div class="fdpa-nav fdpa-nav-red">
+                                    <div class="fdpa-nav fdpa-nav-white">
+                                        <div class="fdpa-nav-container">
+                                            <button class="fdpa-nav-btn fdpa-close-btn">
+                                                <i class="fa fa-times"></i>
+                                            </button>
 
-                <div class="center-outer">
-           
-                    <div class="center-inner">
-                       
-                        <img class="rounded-circle" src="./Images/logo-filmenpleinair.png" alt="" />
+                                            <img src="./Images/logo-filmenpleinair.png" class="fdpa-logo" alt="Logo de l'association film de plein air">
+
+                                            <ul class="fdpa-list">
+                                                <li>
+                                                    <a href="index.html">Accueil</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">À l'affiche</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Le programme</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Réservation</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Blog</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Nous contacter</a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </center>
+                </nav>
+
+               <!-- Caroussel -->
+                <div class="carousel slide carousel-fade" data-ride="carousel" >    
                     
+                    <div class="carousel-caption">
+
+                        <div class="center-outer">
+                   
+                            <div class="center-inner">
+                               
+                                <img class="rounded-circle" src="./Images/logo-filmenpleinair.png" alt="" />
+                            
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Indicator -->
+                    <ul class="carousel-indicators">
+                        
+                        <li data-target="./Images/the-terminator-affiche.jpg" data-slide-to="0" class="active"></li>
+                        
+                        <li data-target="./Images/retour-vers-le-futur-affiche.jpg" data-slide-to="1"></li>
+                        
+                        <li data-target="./Images/le-cinquieme-element-affiche.jpg" data-slide-to="2"></li>
+                        
+                        <li data-target="./Images/star-wars-menace-fantome-affiche.jpg" data-slide-to="2"></li>
+
+                    </ul>
+
+                    <!-- Imgs for caroussel -->
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item active">
+                            <img src="./Images/the-terminator-affiche.jpeg" class="d-block w-100" alt="Regard noir de terminator sur sa moto, image tirée du film the terminator">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="./Images/retour-vers-le-futur-affiche.jpg" class="d-block w-100" alt="Marty et le doc, image tirée du film retour vers le futur">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="./Images/le-cinquieme-element-affiche.jpg" class="d-block w-100" alt="">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="./Images/star-wars-menace-fantome-affiche.jpg" class="d-block w-100" alt="">
+                        </div>
+
+                        <!-- Left/Right icon for caroussel -->
+                        <a class="carousel-control-prev" href="#presentation" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        
+                        <a class="carousel-control-next" href="#presentation" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
                     </div>
 
                 </div>
-
-            </div>
-
-            <!-- Indicator -->
-            <ul class="carousel-indicators">
-                
-                <li data-target="./Images/the-terminator-affiche.jpg" data-slide-to="0" class="active"></li>
-                
-                <li data-target="./Images/retour-vers-le-futur-affiche.jpg" data-slide-to="1"></li>
-                
-                <li data-target="./Images/le-cinquieme-element-affiche.jpg" data-slide-to="2"></li>
-                
-                <li data-target="./Images/star-wars-menace-fantome-affiche.jpg" data-slide-to="2"></li>
-
-            </ul>
-
-            <!-- Imgs for caroussel -->
-            <div class="carousel-inner">
-                
-                <div class="carousel-item active">
-                    <img src="./Images/the-terminator-affiche.jpeg" class="d-block w-100" alt="affiche-films1">
-                </div>
-                
-                <div class="carousel-item">
-                    <img src="./Images/retour-vers-le-futur-affiche.jpg" class="d-block w-100" alt="affiche-film2">
-                </div>
-                
-                <div class="carousel-item">
-                    <img src="./Images/le-cinquieme-element-affiche.jpg" class="d-block w-100" alt="affiche-film3">
-                </div>
-                
-                <div class="carousel-item">
-                    <img src="./Images/star-wars-menace-fantome-affiche.jpg" class="d-block w-100" alt="affiche-film3">
-                </div>
-
-                <!-- Left/Right icon for caroussel -->
-                <a class="carousel-control-prev" href="#presentation" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                
-                <a class="carousel-control-next" href="#presentation" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-
-            </div>
-
-        </div>
-           
-        <!-- Navbar - Menu -->
-            <nav class="navbar navbar-expand-sm justify-content-center" style="">
-                
-                <button class="navbar-toggler" type="button" data-toggle=".content" id="sidebar-toggle">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                 
-                <div class="collapse-center navbar-collapse-center" id="collapsibleNavbar">              
-                    <ul class="navbar-nav">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Accueil</a>
-                        </li>
-                                
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">À l'affiche</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Le Programme</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Réservation</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nous contacter</a>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </nav>
-                 
-        <!--Principal container-->
-        <div class="principal-container">
-            
-            <!--div class="container"-->
-            <h1 class="title-before-swiper"> Films à l'affiche </h1>
-
-                <p class="intro-swiper">
-                    Nous avons sélectionner le meilleurs du cinéma pour vous, venez profitez des films en plein air en famille, entre amis, ou en amoureux ! vous pouvez dés maintenant vous inscrire via notre formulaire de réservation.
-                    <br>Comment ça marche ? c'est très simple vous devez obligatoirement réservez votre place via le formulaire de réservation, pour que nous puissions prévoir en conséquence.
-                </p>
+                   
+                <!-- Navbar - Menu -->
+                <nav class="navbar navbar-expand-sm justify-content-center" style="">
                     
+                    <button class="navbar-toggler" type="button" data-toggle=".content" id="sidebar-toggle">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                     
+                    <div class="collapse-center navbar-collapse-center" id="collapsibleNavbar">              
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Accueil</a>
+                            </li>
+                                    
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">À l'affiche</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Le Programme</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Réservation</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nous contacter</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+                         
+                <!--Principal container-->
+                <div class="principal-container">
+                    
+                    <!--div class="container"-->
+                    <h1 class="title-before-swiper"> Films à l'affiche </h1>
+
+                    <p class="intro-swiper">
+                        Nous avons sélectionner le meilleurs du cinéma pour vous, venez profitez des films en plein air en famille, entre amis, ou en amoureux ! vous pouvez dés maintenant vous inscrire via notre formulaire de réservation.
+                        <br>Comment ça marche ? c'est très simple vous devez obligatoirement réservez votre place via le formulaire de réservation, pour que nous puissions prévoir en conséquence.
+                    </p>
+                        
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             
@@ -200,7 +244,8 @@
                                     <img src="./Images/star-wars-menace-fantome.jpg" alt="affiche-film-star-wars-menace-fantome">
                                 </div>
                                 <div class="details">
-                                    <h3>Star wars : menace fantome <br> <span> Sience fiction</span></h3>
+                                    <h3>Star wars : menace fantome</h3>
+                                    <span class="details-categorie"> Sience fiction</span>
                                     <center>
                                         <a  id="savoir-plus" href="#" class="btn btn-danger">En savoir +</a>
                                     </center>                                
@@ -210,9 +255,9 @@
                         </div>
                     </div>
 
-                    <div class="button_prog" align="center">
+                    <div class="button_prog">
                         <a class="btn-prog" href="#" target="_blank" rel="nofollow">
-                            <span><b>VOIR LA PROGRAMMATION</b></span>
+                            <span>VOIR LA PROGRAMMATION</span>
                         </a>
                     </div>
 
@@ -228,238 +273,241 @@
 
                 </div>
 
-                    <div class="under-parallax">
+                <div class="under-parallax">
 
-                        <p class="intro-faq"> Réserver gratuitement ICI vos places pour le festival du film en plein air ! <br/></p>
-                        
+                    <p class="intro-faq"> Réserver gratuitement ICI vos places pour le festival du film en plein air ! <br/></p>
+                    
 
-                        <!--SYSTEME DE RESERVATION-->
-                        <div class="reservation">
-                            <div class="title-reservation">
-                                <h1>FAIRE UNE RESERVATION</h1>
-                            </div>
-
-                                <div class="form-items">
-                                    <input type="text" class="input" name="lastname" id="lastname" required autofocus placeholder=" Nom" pattern="[a-zA-Z]{3,}" title="Vous devez entrer plus de 3 caractères pour votre nom.">
-                                    <i class="fas fa-user"></i>
-                                </div>
-
-                                    
-                                <div class="form-items">
-                                    <input type="text" name="firstname" class="input"  id="firstname" required autofocus placeholder=" Prénom" pattern="[a-zA-Z]{3,}" title="Vous devez entrer plus de 3 caractères pour votre prénom.">
-                                </div>
-
-                                    
-                                <div class="form-items">
-                                    <input type="text" name="email" id="email" class="input"  required placeholder=" Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="Vous devez une adresse email valide.">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                    
-
-                                <div class="form-items">
-                                    <input type="tel" name="phone" id="phone" class="input" required placeholder=" Téléphone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" title="Vous devez entrer un numéro de téléphone sous ce format : ## ## ## ## ##">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-
-
-                                <label for="date">Date de réservation:</label>
-                                    <div class="form-items">
-                                        <input id="date" class="input" type="date" name="date" min="2020-08-05">
-                                        <i class="fas fa-calendar-alt"></i>
-                                    </div>
-                                    
-                                <label for="nombreplaces">Nombre de places:</label>
-                                            
-                                <div class="form-items">
-                                    <input id="nombreplaces" class="input"  type="number" name="nombreplaces" min="1" max="10">
-                                    <i class="fas fa-users"></i>
-                                </div>
-
-                                <label for="seance">Séance :</label>
-                                            
-                                <select class="seance" size="1">
-                                    <option>test 1</option>
-                                    <option>test 2</option>
-                                    <option>test 3</option>
-                                </select>
-
-                                <div class="button_cont" align="center">
-                                    <a class="btn-contact" href="#" target="_blank" rel="nofollow">
-                                        <span>JE RÉSERVE</span>
-                                     </a>
-                                </div>
-
+                    <!--SYSTEME DE RESERVATION-->
+                    <div class="reservation">
+                        <div class="title-reservation">
+                            <h1>FAIRE UNE RESERVATION</h1>
                         </div>
 
-                    </div>
+                            <div class="form-items">
+                                <input type="text" class="input" name="lastname" id="lastname" required autofocus placeholder=" Nom" pattern="[a-zA-Z]{3,}" title="Vous devez entrer plus de 3 caractères pour votre nom.">
+                                <i class="fas fa-user"></i>
+                            </div>
 
-                    <div class="bgimg-2">
+                                
+                            <div class="form-items">
+                                <input type="text" name="firstname" class="input"  id="firstname" required autofocus placeholder=" Prénom" pattern="[a-zA-Z]{3,}" title="Vous devez entrer plus de 3 caractères pour votre prénom.">
+                            </div>
 
-                        <div class="caption"> 
+                                
+                            <div class="form-items">
+                                <input type="text" name="email" id="email" class="input"  required placeholder=" Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="Vous devez une adresse email valide.">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                                
 
-                            <span class="border"> DES QUESTIONS ? </span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="under-parallax">
-
-                            <p class="intro-faq">
-                                Vous pouvez nous contacter si vous avez des questions complémentaires concernant le festival, l'organisation ect...<br />
-                                Vous pouvez également annuler votre réservation à tout moment directement via ce formulaire <br />
-                                nous sommes la pour répondre à votre demande n’hésitez pas à nous contacter directement via ce formulaire ci-dessous, et nous vous contacterons dans les plus bref délais.                            
-                            </p>
-
-                        <div class="contact-us">
-                            
-                            <div class="title-contact">
-                                <h1> CONTACTEZ NOUS ! </h1>
+                            <div class="form-items">
+                                <input type="tel" name="phone" id="phone" class="input" required placeholder=" Téléphone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" title="Vous devez entrer un numéro de téléphone sous ce format : ## ## ## ## ##">
+                                <i class="fas fa-phone"></i>
                             </div>
 
 
-                            <div class="form">
+                            <label for="date">Date de réservation:</label>
                                 <div class="form-items">
-                                    <input type="text" class="input" placeholder=" Nom">
-                                    <i class="fas fa-user"></i>
+                                    <input id="date" class="input" type="date" name="date" min="2020-08-05">
+                                    <i class="fas fa-calendar-alt"></i>
                                 </div>
-
-                                <div class="form-items">
-                                    <input type="text" class="input" placeholder=" Prénom">
-                                </div>
-
-                                <div class="form-items">
-                                    <input type="text" class="input" placeholder=" Email">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-
-                                <div class="form-items">
-                                    <input type="phone number" class="input" placeholder=" Téléphone">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-
-                                <div class="form-items">
-                                    <textarea class="input-message" cols="30" rows="10" placeholder="Entrez votre message..."></textarea>
-                                </div>
+                                
+                            <label for="nombreplaces">Nombre de places:</label>
+                                        
+                            <div class="form-items">
+                                <input id="nombreplaces" class="input"  type="number" name="nombreplaces" min="1" max="10">
+                                <i class="fas fa-users"></i>
                             </div>
+
+                            <label for="seance">Séance :</label>
+                                        
+                            <select class="seance" size="1">
+                                <option>test 1</option>
+                                <option>test 2</option>
+                                <option>test 3</option>
+                            </select>
 
                             <div class="button_cont" align="center">
                                 <a class="btn-contact" href="#" target="_blank" rel="nofollow">
-                                    <span>Envoyer</span>
-                                </a>
+                                    <span>JE RÉSERVE</span>
+                                 </a>
                             </div>
-
-                            <div class="social-icons">
-                                <div class="facebook">
-                                    <i class="fab fa-facebook-f"></i>
-
-                                </div>
-                                <div class="twitter">
-                                    <i class="fab fa-twitter"></i>
-                                </div>
-                                <div class="instagram">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </div>
-
-                        </div>
 
                     </div>
 
-                    <div class="bgimg-3">
-
-                        <div class="caption">
-                            <span class="border"> F.A.Q </span>
-                        </div>
-
-                    </div>
-
-                    <div class="faq-under-parallax">
-                        <section>
-                            <div class="faq-container">
-                                <p class="intro-faq"><b>F.A.Q</b> pour frequently asked questions autrement dit, Questions Fréquemment Posées. Vous l’aurez compris, cette rubrique fait les questions et les réponses. Si vous n’avez pas trouvé votre bonheur parmi ces infos… Et que vous avez une autre interrogation, merci de nous écrire via le formulaire de contact ci-dessus</p>
-                                <div class="accordion">
-                                    <div class="accordion-item" id="question1">
-                                        <a class="accordion-link" href="#question1">
-                                            Comment réserver sa place ?
-                                            <i class="fas fa-plus"></i>
-                                            <i class="fas fa-minus"></i>
-                                        </a>
-                                        <div class="answer">
-                                            <p>il suffit de vous rendre sur le formulaire de réservation ci-dessus en d'y entrer vos informations : Nom, Prénom, Email, Téléphone, ainsi que la date pour laquelle vous voulez réserver et sélectionner le nombre de places que vous voulez réserver, et de séléctionner la séance qui vous intéresse.<br><br> Ensuite vous n'aurez plus qu'a cliquez sur <b>"JE RESERVE"</b>, vous allez donc recevoir votre billet par mail.</p>
-                                        </div>
-                                    </div>
-
-                                <div class="accordion">
-                                    <div class="accordion-item" id="question2">
-                                        <a class="accordion-link" href="#question2">
-                                            Y'a il un nombres de places limité par réservation ?
-                                            <i class="fas fa-plus"></i>
-                                            <i class="fas fa-minus"></i>
-                                        </a>
-                                        <div class="answer">
-                                            <p>Oui nous limitons le nombres de places par réservation à 4 places.</p>
-                                        </div>
-                                    </div>
-
-                                <div class="accordion">
-                                    <div class="accordion-item" id="question3">
-                                        <a class="accordion-link" href="#question3">
-                                            Je peut faire une seule réservation pour toute ma famille ?
-                                            <i class="fas fa-plus"></i>
-                                            <i class="fas fa-minus"></i>
-                                        </a>
-                                        <div class="answer">
-                                            <p>Oui c'est possible pour les familles nombreuses nous vous recommandons toute fois de nous contacter directement via le formulaire de contact pour cette demande.</p>
-                                        </div>
-                                    </div>                                    
-                                </div>
-
-                                <div class="accordion">
-                                    <div class="accordion-item" id="question4">
-                                        <a class="accordion-link" href="#question4">
-                                            Peut on manger sur place ?
-                                            <i class="fas fa-plus"></i>
-                                            <i class="fas fa-minus"></i>
-                                        </a>
-                                        <div class="answer">
-                                            <p>Oui c'est toute à fait possible des Food truck seront à votre disposition sur le festival.</p>
-                                        </div>
-                                    </div>
-
-                                <div class="accordion">
-                                    <div class="accordion-item" id="question5">
-                                        <a class="accordion-link" href="#question5">
-                                            Les chiens sont ils acceptés ?
-                                            <i class="fas fa-plus"></i>
-                                            <i class="fas fa-minus"></i>
-                                        </a>
-                                        <div class="answer">
-                                            <p>Non les chiens ne sont malheureusement pas acceptés sur le Festival.</p>
-                                        </div>
-                                    </div>                                    
-                                </div>
-
-                                <div class="accordion">
-                                    <div class="accordion-item" id="question6">
-                                        <a class="accordion-link" href="#question6">
-                                            Y'a il un parking proche du festival ? 
-                                            <i class="fas fa-plus"></i>
-                                            <i class="fas fa-minus"></i>
-                                        </a>
-                                        <div class="answer">
-                                            <p>Oui nous allons privatiser un parking à l'occasion de l'événement nous vous indiquerons l'emplacement exact de celui-ci quelques jours avant l'événement. Pour cela rejoignez nous sur les réseaux pour être sur de ne rien louper !</p>
-                                        </div>
-                                    </div>                                    
-                                </div>
-
-                            </div>
-                        </section>   
-
-                    </div>
                 </div>
 
-            </div>
+                <div class="bgimg-2">
+
+                    <div class="caption"> 
+
+                        <span class="border"> DES QUESTIONS ? </span>
+
+                    </div>
+
+                </div>
+
+                <div class="under-parallax">
+
+                        <p class="intro-faq">
+                            Vous pouvez nous contacter si vous avez des questions complémentaires concernant le festival, l'organisation ect...<br />
+                            Vous pouvez également annuler votre réservation à tout moment directement via ce formulaire <br />
+                            nous sommes la pour répondre à votre demande n’hésitez pas à nous contacter directement via ce formulaire ci-dessous, et nous vous contacterons dans les plus bref délais.                            
+                        </p>
+
+                    <div class="contact-us">
+                        
+                        <div class="title-contact">
+                            <h1> CONTACTEZ NOUS ! </h1>
+                        </div>
+
+
+                        <div class="form">
+                            <div class="form-items">
+                                <input type="text" class="input" placeholder=" Nom">
+                                <i class="fas fa-user"></i>
+                            </div>
+
+                            <div class="form-items">
+                                <input type="text" class="input" placeholder=" Prénom">
+                            </div>
+
+                            <div class="form-items">
+                                <input type="text" class="input" placeholder=" Email">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+
+                            <div class="form-items">
+                                <input type="phone number" class="input" placeholder=" Téléphone">
+                                <i class="fas fa-phone"></i>
+                            </div>
+
+                            <div class="form-items">
+                                <textarea class="input-message" cols="30" rows="10" placeholder="Entrez votre message..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="button_cont" align="center">
+                            <a class="btn-contact" href="#" target="_blank" rel="nofollow">
+                                <span>Envoyer</span>
+                            </a>
+                        </div>
+
+                        <div class="social-icons">
+                            <div class="facebook">
+                                <i class="fab fa-facebook-f"></i>
+
+                            </div>
+                            <div class="twitter">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div class="instagram">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bgimg-3">
+
+                    <div class="caption">
+                        <span class="border"> F.A.Q </span>
+                    </div>
+
+                </div>
+
+                <div class="faq-under-parallax">
+                    <section>
+                        <div class="faq-container">
+                        
+                            <p class="intro-faq">
+                                F.A.Q pour frequently asked questions autrement dit, Questions Fréquemment Posées. Vous l’aurez compris, cette rubrique fait les questions et les réponses. Si vous n’avez pas trouvé votre bonheur parmi ces infos… Et que vous avez une autre interrogation, merci de nous écrire via le formulaire de contact ci-dessus
+                            </p>
+
+                            <div class="accordion">
+                                <div class="accordion-item" id="question1">
+                                    <a class="accordion-link" href="#question1">
+                                        Comment réserver sa place ?
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                    <div class="answer">
+                                        <p>il suffit de vous rendre sur le formulaire de réservation ci-dessus en d'y entrer vos informations : Nom, Prénom, Email, Téléphone, ainsi que la date pour laquelle vous voulez réserver et sélectionner le nombre de places que vous voulez réserver, et de séléctionner la séance qui vous intéresse.<br><br> Ensuite vous n'aurez plus qu'a cliquez sur <b>"JE RESERVE"</b>, vous allez donc recevoir votre billet par mail.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion">
+                                <div class="accordion-item" id="question2">
+                                    <a class="accordion-link" href="#question2">
+                                        Y'a il un nombres de places limité par réservation ?
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                    <div class="answer">
+                                        <p>Oui nous limitons le nombres de places par réservation à 4 places.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion">
+                                <div class="accordion-item" id="question3">
+                                    <a class="accordion-link" href="#question3">
+                                        Je peut faire une seule réservation pour toute ma famille ?
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                    <div class="answer">
+                                        <p>Oui c'est possible pour les familles nombreuses nous vous recommandons toute fois de nous contacter directement via le formulaire de contact pour cette demande.</p>
+                                    </div>
+                                </div>                                    
+                            </div>
+
+                            <div class="accordion">
+                                <div class="accordion-item" id="question4">
+                                    <a class="accordion-link" href="#question4">
+                                        Peut on manger sur place ?
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                    <div class="answer">
+                                        <p>Oui c'est toute à fait possible des Food truck seront à votre disposition sur le festival.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion">
+                                <div class="accordion-item" id="question5">
+                                    <a class="accordion-link" href="#question5">
+                                        Les chiens sont ils acceptés ?
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                    <div class="answer">
+                                        <p>Non les chiens ne sont malheureusement pas acceptés sur le Festival.</p>
+                                    </div>
+                                </div>                                    
+                            </div>
+
+                            <div class="accordion">
+                                <div class="accordion-item" id="question6">
+                                    <a class="accordion-link" href="#question6">
+                                        Y'a il un parking proche du festival ? 
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-minus"></i>
+                                    </a>
+                                    <div class="answer">
+                                        <p>Oui nous allons privatiser un parking à l'occasion de l'événement nous vous indiquerons l'emplacement exact de celui-ci quelques jours avant l'événement. Pour cela rejoignez nous sur les réseaux pour être sur de ne rien louper !</p>
+                                    </div>
+                                </div>                                    
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
 
             <!--FOOTER-->
             <div id="footer" class="jumbotron text-center" >
@@ -471,23 +519,22 @@
                
             </div>
 
-    </body>
+        </body>
 
     <footer>
-
+        <!-- Google Font -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+        <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/e7b36719b7.js" crossorigin="anonymous"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
+        <!-- Bootstrap JS-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+        <!-- Swiper MIN.JS for "FILMS A L'AFFICHE" -->
         <script src="./js/swiper.min.js"></script>
-
+        <!-- Swiper JS or "FILMS A L'AFFICHE" -->
         <script src="./js/swiper.js"></script>
-
+        <!-- JS for menu responsive -->
         <script src="./js/menu.js"></script>
 
-    </footer>       
+    </footer>
+
 </html>
