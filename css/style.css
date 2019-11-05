@@ -133,6 +133,12 @@ legend {
 
 }
 
+a.nav-link {
+        font-family: 'Titillium Web', sans-serif;
+        letter-spacing: 2px;
+
+}
+
 /* Principal container */
 .principal-container {
 
@@ -238,6 +244,11 @@ p.intro-swiper {
 
 }
 
+.savoir-plus {
+    display: block;
+    margin-left: 2.0rem;
+    margin-right: 2.0rem;
+}
 
 /* "VOIR LA PROGRAMMATION" button .btn-prog */
 .button_prog {
@@ -295,41 +306,6 @@ p.intro-swiper {
 
  }
 
-
-/* Container of "A L'AFFICHE" 
-.col-sm-12 {
-
-    text-align: left; 
-    margin-top: 10px; 
-    margin-bottom: 50px;
-
-}
-
- Title "A L'AFFICHE" 
-.mt-0 {
-
-    text-align: center; 
-    color: #ffde59;
-
-}
-
- Imgs of "A L'AFFICHE" 
-.col-sm-3 img {
-
-    height: 300px;
-    width: 250px; 
-    padding: 10px;
-
-}
-
-/* Title parallax "RESERVEZ DES MAINTENANT" 
-.caption span.border {
-
-    background-color: #001a66;
-    font-size: 25px;
-    color: #ffde59;
-
-}*/
 
 /* Containers under parallax */
 .under-parallax {
@@ -466,28 +442,16 @@ label {
 
 }
 
-/* Send button of "CONTACTEZ NOUS !"
-.btn-contact {
-
-    background: #827ffe;
-    text-align: center;
-    color: #fff;
-    padding: 12px;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-
-.btn-contact .fas {
-
-    margin-left: 15px;
-    font-size: 12px;
-
-}*/
-
-/* Send button of "CONTACTEZ NOUS !" NEW*/
+/* Send button of "CONTACTEZ NOUS ! & RESERVATION" NEW*/
 .button_cont{
     margin-bottom: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+a.btn-contact{
+    display: block;
+    margin: 0 auto;
 }
 
 .btn-contact {
@@ -627,15 +591,6 @@ label {
 
 }
 
-/*.form-reservation {
-
-    border: 1px solid #001a66;
-    width: 500px;
-    height: 550px;
-    padding: 10px;
-    margin: 0 auto;
-    
-}*/
 
 #btn-envoyer {
 
@@ -671,7 +626,7 @@ select {
 
 #nombreplaces {
 
-    width: 20%;
+    width: 10%;
     text-align: center;
 }
 
@@ -841,6 +796,13 @@ button.fdpa-nav-btn.fdpa-open-btn {
     background-color: #050D37;
 }
 
+button.fdpa-nav-btn.fdpa-close-btn {
+    width: 40px; 
+    height: 40px; 
+    border: 3px solid #ffde59; 
+    border-radius: 50px;
+    background-color: #050D37;
+}
 
 .fdpa-nav-btn {
     float: left;
@@ -874,14 +836,14 @@ button.fdpa-nav-btn.fdpa-open-btn {
 }
 
 .fdpa-nav-black {
-    background-color: #6712EB;
+    background-color: #041863;
     width: 59%;
     max-width:  480px;
     min-width: 320px; 
 }
 
 .fdpa-nav-red {
-    background-image: linear-gradient(to left, #050d37, #041863, #1b1f91, #3d20be, #6712eb);
+    background-color: #041863;
     transition-delay: 0.2s;
     width: 95%;
 }
@@ -891,7 +853,7 @@ button.fdpa-nav-btn.fdpa-open-btn {
 }
 
 .fdpa-nav-white {
-    background: white;
+    background-image: linear-gradient(to left top, #050d37, #041863, #1b1f91, #3d20be, #6712eb);    
     padding: 40px;
     transition-delay: 0s;
     width: 95%;
@@ -926,10 +888,11 @@ button.fdpa-nav-btn.fdpa-open-btn {
 }
 
 .fdpa-list li a {
-    color: rgba(34, 31, 31);
+    color: white;
     font-size: 15px;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 20;
 }
 
 ul button {
@@ -942,114 +905,6 @@ ul button {
     cursor: pointer;
 }
 
-/*OLD*/
-/*
-.content {
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    height: 100%;
-    left: 0;
-    -webkit-transition:  left 0.4s ease-in-out;
-    -moz-transition:  left 0.4s ease-in-out;
-    -ms-transition:  left 0.4s ease-in-out;
-    -o-transition:  left 0.4s ease-in-out;
-    transition:  left 0.4s ease-in-out;
-}
- 
-.content.open-sidebar {
-    left: 240px;
-}
-
- 
-#sidebar {
-    position: absolute;
-    left: -240px;
-    background: #ff8c10;
-    border-right: 1px solid white;
-    opacity: 1;
-    z-index: 9999;
-    width: 240px;
-    height: 100%;
-    box-sizing: border-box;
-}
-#sidebar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#sidebar ul li {
-    margin: 0;
-}
-
-#sidebar ul li a {
-    padding: 15px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    display: block;
-    border-bottom: 2px solid white;
-    -webkit-transition:  background 0.3s ease-in-out;
-    -moz-transition:  background 0.3s ease-in-out;
-    -ms-transition:  background 0.3s ease-in-out;
-    -o-transition:  background 0.3s ease-in-out;
-    transition:  background 0.3s ease-in-out;
-}
-
-#sidebar ul li:hover a {
-    background: rgb(242,242,242);
-    color:#ff8c10;
-}
-
-.main-content {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    position: relative;
-}
-
-.main-content .content {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding-left: 60px;
-    width: 100%;
-}
-
-.main-content .content h1 {
-    font-weight: 100;
-}
-
-.main-content .content p {
-    width: 100%;
-    line-height: 160%;
-}
-
-.main-content #sidebar-toggle {
-    background: #DF314D;
-    border-radius: 3px;
-    display: block;
-    position: relative;
-    padding: 10px 7px;
-    float: left;
-}
-
-#sidebar-toggle .bar {
-    display: block;
-    width: 18px;
-    margin-bottom: 3px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 1px;   
-}
-
-#sidebar-toggle .bar:last-child {
-     margin-bottom: 0;   
-}*/
-
 /* BLOG  ARTICLE */
 
 .title-blog {
@@ -1057,6 +912,13 @@ ul button {
     text-align: center;
     color: #FFF;
 
+}
+
+.title-news {
+    font-size: 20px; 
+    text-transform: uppercase; 
+    font-weight: 700; 
+    color: #fff;
 }
 
 /* INTRODUCE BLOG */
@@ -1230,14 +1092,17 @@ div.news-content {
 
 }
 
-#blog-footer a:hover {
+/* Parameters for Laptop & Desktop */
+@media only screen and (min-width: 1025px){
 
-    color: ;
-
+    button.fdpa-nav-btn.fdpa-open-btn {
+        display: none; 
+    }
 }
 
+/* Parameters for Smartphones & Tablets */
 
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
 
     body,html {
           margin: 0;
