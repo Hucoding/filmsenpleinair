@@ -1,41 +1,85 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
 
-/* Body for under parallax */
+/* Paramètre de position pour toutes les classes .filmtext-1 */
 .film-text-1 {
+
     position: relative;
+
 }
 
-/* Responsive Menu */
 
-button.fdpa-nav-btn.fdpa-open-btn {
+/* Tous les styles concernant les classes p.principal-intro, p.booking-intro, p.contact-intro, p.faq-intro*/
+.principal-intro,
+.booking-intro,
+.contact-intro,
+.faq-intro {
+    
+    padding: 2%;
+    border-left: 3px solid;
+    margin: 0 auto;
+
+}
+
+/* Menu pour Desktop/laptop */
+.navbar.navbar-expand-sm.justify-content-center {
+
+    background-color: #0d0d0d;
+    color: #FFF;
+
+}
+
+.nav-link {
+
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 1px;
+    color: #FFF;
+    text-decoration: none;
+
+}
+
+.nav-link:hover {
+    color: #ffde59;
+}
+
+/***********************************/
+
+
+/* Menu responsive (style du bouton d'ouverture) */
+.fdpa-nav-btn.fdpa-open-btn {
+
     border: 2px solid #ffde59;
     border-radius: 5px;
-    background-color: #050D37;
+
 }
 
-/* Button for close the responsive menu */
-button.fdpa-nav-btn.fdpa-close-btn {
+/* Menu responsive (style du bouton de fermeture) */
+.fdpa-nav-btn.fdpa-close-btn {
+
     width: 40px; 
     height: 40px; 
     border: 3px solid #ffde59; 
     border-radius: 50px;
     background-color: #050D37;
+
 }
 
-/* Style for button open the responsive menu */
+/* Menu responsive (Position et style du bouton d'ouverture du menu)  */
 .fdpa-nav-btn {
+
     float: left;
     border: 0;
-    background: transparent;
+    background-color: black;
     cursor: pointer;
     font-size: 20px;
     z-index: 9999;
     color: #ffde59; 
+
 }
 
-/* Parameters for responsive Menu */
+/* Menu responsive (Paramètres du bouton concernant la position à l'ouverture du menu) */
 .fdpa-nav {
+
     z-index: 9999;
     position: fixed;
     top: 0;
@@ -46,141 +90,158 @@ button.fdpa-nav-btn.fdpa-close-btn {
 
 }
 
-/* Position button open the responsive menu */
+/* Menu responsive (Position du bouton d'ouverture) */
 .fdpa-open-btn {
+
     position: fixed;
     top: 10px;
     left: 10px;
 }
 
+/* Menu responsive (Affichage du menu "visible") */
 .fdpa-nav.visible {
+
     transform: translateX(0);
+
 }
 
 .fdpa-nav-black {
+
     background-color: #041863;
     width: 59%;
     max-width:  480px;
-    min-width: 320px; 
+    min-width: 320px;
+
 }
 
 .fdpa-nav-red {
+
     background-color: #041863;
     transition-delay: 0.2s;
     width: 95%;
 }
 
+/* Menu responsive (Délais d'ouverture du menu lorqu'on appuie sur le bouton) */
 .fdpa-nav-red.visible {
+
     transition-delay: 0.2s;
 }
 
 .fdpa-nav-white {
+
     background-image: linear-gradient(to left top, #050d37, #041863, #1b1f91, #3d20be, #6712eb);    
     padding: 40px;
     transition-delay: 0s;
     width: 95%;
+
 }
 
 .fdpa-nav-white.visible {
+
     transition-delay: 0.4s;
+
 }
 
 .fdpa-nav-container {
+
     position: relative;
+
 }
 
+/* Menu responsive (Position du bouton de fermeture du menu) */
 .fdpa-close-btn {
+
     opacity: 0.3s;
     position: absolute;
     top: 10px;
     right: 0;
+
 }
 
-/* Logo in the responsive menu */
+/* Menu responsive (Logo de l'association en haut du menu) */
 .fdpa-logo {
+
     width: 150px;
+
 }
 
+/* Menu responsive (Style générale des rubriques dans le menu) */
 .fdpa-list {
+
     list-style: none;
     padding: 0;
+
 }
 
-.fdpa-list li {
+/* Menu responsive (Paramètres de position des rubriques) */
+.fdpa-list .fdpa-list-li {
+
     margin: 20px 0;
+
 }
 
-.fdpa-list li a {
+/* Menu responsive (Paramètres de style des des différentes rubriques dans le menu) */
+.fdpa-list .fdpa-list-li .fdpa-list-a {
+
     color: white;
     font-size: 15px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 20;
+
 }
 
-ul button {
-    padding: 15px 40px;
-    outline: none;
-    color: white;
-    font-family: tahoma;
-    border: none;
-    cursor: pointer;
-}
 
 /***********************************/
 
-/* Title of the top of index.html */
+/* Titre en Haut de la page index.html */
 .top-title {
+
     color: #fff;
     text-align: center;
-}
 
-/* Top of the index.html */
-.principal-intro {
-    padding: 2%;
-    border-left: 3px solid;
 }
 
 /***********************************/
 
-/* Content under parallax*/
+/* Paramètres pour TOUS les containers en dessous de CHAQUE parallax */
 .under-parallax {
+
     color:#ddd;
     background-image: linear-gradient(to right top, #050d37, #041863, #1b1f91, #3d20be, #6712eb);
     text-align:center;
     padding: 50px 80px;
     text-align: justify;
+
 }
 
 /***********************************/
 
-/* Contact system */
+/* Formulaire de contact */
 
-/* Style for class .contact-intro */
-p.contact-intro {
-    padding: 2%;
-    border-left: 3px solid;
-}
-
-/* "CONTACT" form */
+/* Formulaire de contact (Style du formulaire de contact) */
 .contact-us {
-    width: 80%;
+
+    width: 100%;
     background-color: #fff;
     padding: 50px;
     margin: 100px auto;
     position: relative;
+
 }
 
-/* Title of "CONTACTEZ NOUS !" */
+/* Formulaire de contact (Paramètres affectés pour le titre H1 du formulaire de contact) */
 .title-contact h1 {
+
     color: #535274;
     font-weight: 2.0rem;
     letter-spacing: 0.31rem;
     margin-bottom: 1.56rem;
-    text-align: center;    
+    text-align: center; 
+
 }
 
-/* width of "CONTACTEZ NOUS !" */
+/* Formulaire de contact (taille des inputs en fonction de la taille du formulaire) */
 .form,
 .form-items {
 
@@ -188,7 +249,7 @@ p.contact-intro {
 
 }
 
-/* width-input of "CONTACTEZ NOUS !"  */
+/* Formulaire de contact (Taille et style des inputs) */
 .form-items .input {
 
     width: 100%;
@@ -202,7 +263,7 @@ p.contact-intro {
 
 }
 
-/* width-height & others parameters for message input of "CONTACTEZ NOUS !" */
+/* Formulaire de contact (Tailles et style concernant la textarea) */
 .form-items .input-message {
 
     height: 200px;
@@ -216,7 +277,7 @@ p.contact-intro {
 
 }
 
- /* social icons of "CONTACTEZ NOUS !"*/
+ /* Formulaire de contact (Paramètres de tailles et de positionnement des logos des réseaux sociaux) */
 .social-icons {
 
     position: absolute;
@@ -229,6 +290,7 @@ p.contact-intro {
 
 }
 
+/* Formulaire de contact (Paramètres de taille et de forme des .social-icons) */
 .social-icons div {
 
     width: 60px;
@@ -239,6 +301,7 @@ p.contact-intro {
 
 }
 
+/* Formulaire de contact (Position des .social-icons) */
 .social-icons div .fab {
 
     position: absolute;
@@ -248,21 +311,21 @@ p.contact-intro {
     color: #fff;
 }
 
-/* Facebook icon of "CONTACTEZ NOUS !" */
+/* Formulaire de contact (Style du .social-icon Facebook) */
 .social-icons div.facebook {
 
     background: #5178D9;
 
 }
 
-/* Twitter icon of "CONTACTEZ NOUS !" */
+/* Formulaire de contact (Style du .social-icon Twitter) */
 .social-icons div.twitter {
 
     background: #41CAF6;
 
 }
 
-/* Instagram icon of "CONTACTEZ NOUS !" */
+/* Formulaire de contact (Style du .social-icon Instagram) */
 .social-icons div.instagram {
 
     background: #f09433; 
@@ -275,37 +338,34 @@ p.contact-intro {
 
 /***********************************/
 
-/* Booking system */
+/* Formulaire de réservation */
 
-p.booking-intro {
-    padding: 2%;
-    border-left: 3px solid;
-}
-
-/* "RESERVATION" form */
+/* Formulaire de réservation (Taille & style du formulaire) */
 .reservation {
 
-    margin: 0 auto;
-    margin: 6.25rem;
+    margin: 100px auto;
     padding: 3.13rem;
-    width: 80%;
+    width: 100%;
     background-color: #fff;
     position: relative;
 
 
 }
 
-/* "RESERVATION" title */
-.title-reservation h1 {
+/* Formulaire de réservation (Style du titre du formulaire) */
+.title-reservation {
+
     color: #535274;
     font-weight: 2.0rem;
     letter-spacing: 0.31rem;
     margin-bottom: 1.56rem;
     text-align: center;
+
 }
 
-/* Style of .booking-input & .form-items */
+/* Formulaire de réservation (Style de .form-items et .booking-input) */
 .form-items .booking-input {
+
     width: 100%;
     margin-bottom: 12px;
     padding: 10px 30px;
@@ -314,14 +374,17 @@ p.booking-intro {
     border: 0;
     outline: none;
     border-radius: 5px;
+
 }
 
+/* Formulaire de réservation (Paramètre de position des .form-items) */
 .form-items {
 
     position: relative;
 
 }
 
+/* Formulaire de réservation (Paramètres de position des font-awesome dans les .forms-items) */
 .form-items .fas {
 
     position: absolute;
@@ -331,6 +394,7 @@ p.booking-intro {
 
 }
 
+/* Formulaire de réservation (Style de .select-seance) */
 .select-seance {
 
     background-color: #EBEEF1;
@@ -340,35 +404,42 @@ p.booking-intro {
     outline: none;
     border-radius: 5px;
     box-sizing: border-box;
-   color: #0dà;
+    color: #0D0D0D;
 
 }
 
 
-/* Label of "RESERVATION" */
-label.booking-label {
+/* Formulaire de réservation (Paramètre de style du label "Date de réservation") */
+.booking-label {
+
     color: #0D0D0D;
+
 }
 
 /***********************************/
 
-/* Send button of "CONTACTEZ NOUS ! & RESERVATION" */
-.button_send{
+/* Bouton envoyer/je réserve (associé aux formulaires de réservation & contact) */
+.button_send {
+
     margin-bottom: 15px;
     display: block;
     margin: 0 auto;
+
 }
 
+/* Bouton envoyer/je réserve (Paramètres de position du bouton) */
+.btn-send.btn-send-a {
 
-a.btn-send{
     display: block;
     margin: 0 auto;
+
 }
 
+/* Bouton envoyer/je réserve (Paramètres de style du bouton) */
 .btn-send {
 
    border-radius: 4px;
-   background: linear-gradient(to right top, #2c48db, #135ce7, #006ff1, #0081f9, #0092ff) !important;
+   background: linear-gradient(to right top, #2c48db, #135ce7, #006ff1, #0081f9, #0092ff);
    border: none;
    border-radius: 25px;
    color: #FFFFFF;
@@ -383,7 +454,8 @@ a.btn-send{
 
  }
 
- .btn-send span {
+ /* Bouton envoyer/je réserve (Paramètres de style/position/texte du bouton) */
+ .btn-send-span {
 
    color: #FFFFFF;
    cursor: pointer;
@@ -392,7 +464,9 @@ a.btn-send{
    transition: 0.4s;
 
  }
- .btn-send span:after {
+
+ /* Bouton envoyer/je réserve (Paramètres de position/style après survol de la souris sur le bouton) */
+ .btn-send .btn-send-span:after {
 
    content: '\00bb';
    position: absolute;
@@ -403,12 +477,16 @@ a.btn-send{
    transition: 0.5s;
 
  }
- .btn-send:hover span {
+
+ /* Bouton envoyer/je réserve (Positionnement du texte dans le bouton) */
+ .btn-send:hover .btn-send-span {
 
    padding-right: 25px;
 
  }
- .btn-send:hover span:after {
+
+ /* Bouton envoyer/je réserve (Paramètres de Style et position au survol de la souris) */
+ .btn-send:hover .btn-send-span:after {
 
    opacity: 1;
    right: 0;
@@ -419,27 +497,24 @@ a.btn-send{
 
 /* F.A.Q */
 
-/* Parameters of .faq-container */
 .faq-container {
+
     width: 100%;
     height: 80.0rem;
     background-image: linear-gradient(to right top, #050d37, #041863, #1b1f91, #3d20be, #6712eb); 
     padding: 50px 80px;
     text-align: justify;
-}
 
-/* Intro for faq */
-p.faq-intro {
-    padding: 2%;
-    border-left: 3px solid;
 }
 
 .accordion-container {
+
     margin-top:  5.0rem;
+
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+
     background-color: #283042;
     color: #FFF;
     box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
@@ -451,24 +526,26 @@ p.faq-intro {
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
+
     background-color: #ccc;
     color: #283042; 
+
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
+
     padding: 0 18px;
     display: none;
     background-color: #212838;
     overflow: hidden;
+
 }
 
-/* Color of paragraph faq accordion an border */
-.panel p {
+.panel .panel-p {
     margin-top: 1.0rem;
     color: #FFF;
     border-left: 3px solid  #00ff00;
@@ -479,48 +556,65 @@ p.faq-intro {
 
 /***********************************/
 
-/* footer */
+/* FOOTER */
 
-/* General parameters for the footer */
-#footer {
+/* Footer (Paramètres géréaux du footer) */
+.footer.jumbotron.text-center {
+
     background-color: #0D0D0D;
     border-radius: 0;
+
 }
 
-/* text in the footer */
+/* Footer (Paramètres de style du texte dans le footer) */
 .footer-text {
+
+    text-decoration: none;
     color: #fff;
+
 }
 
-/* link to hugo-muttoni.com */
-#footer a {
+/* Footer (Paramètres de style du lien vers le créateur du site) */
+.footer .author-link {
+
     padding: 10px;
     border: 1px solid #ffde59;
     border-radius: 5px;
     text-decoration: none;
     color: #ffde59;
     cursor: pointer;
+
 }
 
-/* delete margin bottom for jumbotron */
+/* Footer (Paramètres de style du lien au survol de la souris)*/
+.footer .author-link:hover {
+    color: #ffde59;
+    text-decoration: none;
+}
+
+/* Footer (Suppression du marge en haut du footer)*/
 .jumbotron.text-center {
+
     margin-bottom: 0;
+
 }
 
 /***********************************/
 
-#cards{
-    width:100%; 
-    text-align: center;
-} 
+/* Bouton "VOIR LA PROGRAMMATION" */
 
-#cards .button-prog {
+/* Films à l'affiche (Bouton permettant de voir la programmation complète du festival) */
+.button_prog {
+    
+    display: block;
+    margin: auto;
     text-align: center;
-    margin-top: 5%;
-    width: 30%;
+    margin-top: 15%;
+    width: 15%;
     background-color: #ffde59;
     border: none;
     border-radius: 25px;
+    word-wrap: break-word;
     color: black;
     text-align: center;
     text-transform: uppercase;
@@ -528,131 +622,222 @@ p.faq-intro {
     padding: 15px;
     transition: all 0.4s;
     cursor: pointer;
+
 }
 
+/* Films à l'affiche (Paramètres supplémentaires concernant le bouton "VOIR LA PROGRAMMATION") */
+.btn-prog-span {
+
+color: #0D0D0D;
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.4s;
+
+}
+
+/* Films à l'affiche (Paramètres supplémentaires concernant le bouton "VOIR LA PROGRAMMATION") */
+.btn-prog .btn-prog-span:after {
+
+content: '\00bb';
+position: absolute;
+opacity: 0;
+color: #0D0D0D;
+top: 0;
+right: -20px;
+transition: 0.5s;
+
+}
+
+/* Films à l'affiche (Paramètres supplémentaires concernant le bouton "VOIR LA PROGRAMMATION") */
+.btn-prog:hover .btn-prog-span {
+
+padding-right: 25px;
+
+}
+
+/* Films à l'affiche (Paramètres supplémentaires concernant le bouton "VOIR LA PROGRAMMATION") */
+.btn-prog:hover .btn-prog-span:after {
+
+    opacity: 1;
+    right: 0;
+
+}
+
+/* Films à l'affiche (Affiches de films présentés pour le festival) */
+.cards {
+
+    width:100%; 
+    text-align: center;
+    display: flex;
+} 
+
+/***********************************/
+
 div[class^="section-card"] {
-    display: inline-block;
+
+    flex: 1;
     width:20%;
+
 }
 
 div[class^="section-card"] .inner_section_card {
+
     max-width: 90%;
+    height: 57%;
     background-color: #fff;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+
 }
 
-div[class^="section-card"] .inner_section_card h2 {
+div[class^="section-card"] .inner_section_card .title_card {
+
     color: black;
     font-weight: 700;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    word-wrap: break-word;
     margin: 0;
     padding: 0;
     font-size: 20px;
+
 }
 
-div[class^="section-card"] .inner_section_card h2 span{
-    font-size: 14px;
-    color: #6c757d !important;
+div[class^="section-card"] .inner_section_card .title_card .title_author {
+
+    font-size: 12px;
+    color: #6c757d;
+
+}
+
+div[class^="section-card"] .inner_section_card_affiche {
+    max-width: 90%;
+    background-color: transparent;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
 }
 
 div[class^="section-card"] .inner_section_card_image {
-    max-width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+
+    width: 100%;
+    
 }
 
-/* Stars for all .section-card */
 div[class^="section-card"] .rating_card {
+
     position: relative;
     padding: 5px 0;
+
 }
 
-/* Parameters font-awesome 'stars' for all .section-card */
 div[class^="section-card"] .rating_card .fa {
+
     color: #F7F406;
     margin-right: 2px;
     font-size: 16px;
+
 }
 
-/* Score after the stars for all .section-card  */
-div[class^="section-card"] .rating_card span {
+
+div[class^="section-card"] .rating_card .rating_card_span {
+
     color: #0d0d0d;
     padding: 0 5px;
+
 }
 
-/* Tags for the category of the film .section-card */
 div[class^="section-card"] .tags_card {
+
     position: relative;
     margin-top: 5px;
 
 }
 
-/* Parameters for tags .section-card */
 div[class^="section-card"] .tags_card span {
+
     padding: 2px 5px;
     margin-right: 2px;
     color: #FFF;
     display: inline-block;
     border-radius: 4px;
+
 }
 
-/* Action tag for all .section-card */
-div[class^="section-card"] .tags_card span.action {
+div[class^="section-card"] .tags_card .action {
+
     background: #ffde59;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: italic;
 
+
 }
 
-/* Aventure tag for all .section-card */
-.tags_card span.aventure {
+div[class^="section-card"] .tags_card .aventure {
+
     background: #ffde59;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: italic;
+
 }
 
 
 div[class^="section-card"] .info_card {
-    color: #6c757d !important;
+
+    color: #6c757d;
     font-style: italic;
+
 }
 
-div[class^="section-card"] .info_card p {
+div[class^="section-card"] .info_card .inner_section_card_p {
+
     margin: 15px 0 10px;
+    word-wrap: break-word;
 }
 
 div[class^="section-card"] .actors_card {
+
     position: relative;
+
 }
 
-div[class^="section-card"] .actors_card h4 {
+div[class^="section-card"] .actors_card .casting_card {
+
     margin: 0;
     padding: 0;
     font-size: 20px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #6c757d !important;
+    color: #6c757d;
+
 }
 
-div[class^="section-card"] .actors_card ul {
+div[class^="section-card"] .actors_card .actors_card_ul {
+
     margin: 10px 0 0;
     padding: 0;
-    display: flex;
+
 }
 
-div[class^="section-card"] .actors_card ul li {
+div[class^="section-card"] .actors_card .actors_card_ul .actors_card_li {
+
     list-style: none;
     width: 35px;
     height: 35px;
     background: #FFF;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 6px;
+    display: inline-block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
     border: 2px solid #FFF;
+
 }
 
-div[class^="section-card"] .actors_card ul li img {
+div[class^="section-card"] .actors_card .actors_card_ul .actors_card_li .actors_card_img {
+
     width: 100%;
+
 }
 
 /***********************************/
@@ -660,64 +845,68 @@ div[class^="section-card"] .actors_card ul li img {
 /* BLOG */
 
 .title-blog {
+
     padding: 20px;
     text-align: center;
     color: #FFF;
 
 }
 
-section.latest-news-area {
-    background-image: linear-gradient(to right top, #050d37, #041863, #1b1f91, #3d20be, #6712eb); 
-    height: 150%;
-}
+/* ARTICLES DU BLOG */
+.latest-news-area {
 
-/* INTRODUCE BLOG */
-
-.pres-blog {
-    text-align: center;
-    color: #FFF;
-}
-
-/* BLOG POST */
-section.latest-news-area {
    display: block;
    text-align: center;
+
 }
 
-
 .latest-news-area {
+
     height: 100%;
     margin-top: 0px;
+
 }
 
 .latest-news-wrap {
+
     border-radius: 5px;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
     background-color: #050D37;
+
 }
 
-.latest-news-wrap p {
+
+.latest-news-wrap .news-content-p {
+
     color: #fff;
+
 }
 
-div.col-md-4 {
+.col-md-6 {
+
     display: inline-block;
     padding: 1.6rem;
+
 
 }
 
 .latest-news-wrap:hover .news-img:before {
+
     opacity: .5;
     transform: scale(1);
+
 }
 
-img.img-responsive-blog {
+.img-responsive-blog {
+
     height: 100%;
     width: 100%;
+
 
 }
 
 .deat {
+
     background: #2067ED none repeat scroll 0 0;
     height: 70px;
     left: 0;
@@ -726,93 +915,114 @@ img.img-responsive-blog {
     top: 0;
     width: 100px;
     padding: 10px;
-}
-
-div.deat {
-        border-top-left-radius: 5px;  
+    border-top-left-radius: 5px;  
 
 }
 
-.deat span {
+.deat .deat-span {
+
     display: block;
     color: #fff;
     font-weight: 500;
     font-size: 16px;
+
 }
 
 .news-content {
+
     padding: 20px;
     margin-left: 3px;
     word-wrap: break-word;
 
 }
 
-div.news-content {
+.news-content {
+
     height: 100%;
     width: 100%;
-    
+
 }
 
-.news-content a {
+.news-content .news-content-a {
+
     font-size: 14px;
     background-color: #ffde59;
     padding: 10px 20px;
     color: #050D37;
-    transition: all 0.5s ease-in; 
+    transition: all 0.5s ease-in;
+
 }
 
-.news-content a:hover {
+.news-content .news-content-a:hover {
+
     font-size: 14px;
     border: 1px solid #fff;
     border-top-right-radius: 20px;
     background-color: transparent;
     color: #fff;
     text-decoration: none;
+
 }
 
-.news-content i {
+.news-content .fab.fa-facebook-f, .fab.fa-twitter, .fab .fa-instagram {
+
     font-size: 18px;
     display: inline-block;
+
 }
 
 .news-content .fa {
+
     padding: 10px 10px;
     cursor: pointer;
+
 }
 
 .news-content .fa-facebook-f {
+
     color: #3B5995;
+
 }
 
 .news-content .fa-twitter {
+
     color: #0084B4;
+
 }
 
 .news-content .fa-instagram {
+
     background: #f09433; 
     border-radius: 5px;
-    height: 15px;
+    height: 15px
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
 }
 
 .fa-instagram {
+
     color: #fff;
+
 }
 
 .news-img {
+
     position: relative;
-    background-size: cover;
+
 }
 
-.news-img img {
+.news-img .img-responsive-blog {
+
     border-top-left-radius: 5px;  
-    border-top-right-radius: 5px; 
+    border-top-right-radius: 5px;
+
 }
 
 .news-img:before {
+
     position: absolute;
     left: 0;
     top: 0;
@@ -823,34 +1033,246 @@ div.news-content {
     opacity: 0;
     transform: scale(.8);
     transition: all 0.5s;
-}
-
-#blog-footer{
-    background-color: #0d0d0d;
-}
-
-
-#blog-footer a {
-
-    padding: 10px;
-    border: 1px solid #ffde59;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #ffde59;
-    cursor: pointer;
 
 }
 
-/* Media queries : Parameters for Smartphones and Tablets */
 
-@media only screen and (max-width: 320px) {
 
+/* Paramètres pour smartphones et autres devices de petites tailles */
+@media (max-width: 526px) {
+
+    .reservation {
+
+        display: none;
+
+    }
+
+    .contact-us {
+
+        display: none;
+
+    }
 
 
 }
 
-@media only screen and (max-width: 1024px) and (orientation: portrait) {
+/* Parameters for Laptop & Desktop */
+@media only screen and (min-width: 1351px){
 
+    button.fdpa-nav-btn.fdpa-open-btn {
+        display: none; 
+    }
+}
+
+@media (max-width: 715px) {
+
+    /* Suppression du logo sur le caroussel */
+    .rounded-circle.logo_opacity {
+
+        display: none;
+
+    }
+
+    /* Élargissement du bouton "VOIR LA PROGRAMMATION" */
+    .button_prog {
+
+        width: 100%;
+        font-size: 12px;
+
+    }
+
+    /* Suppression des cards */
+    div[class^="section-card"] {
+
+        display: none;
+
+    }
+
+}
+
+/* Paramètres pour gérer l'affichage sur tablettes et Laptop */
+@media (min-width: 715px) and (max-width: 1350px) {
+
+    .navbar.navbar-expand-sm.justify-content-center {
+
+        display: none;
+
+    }
+    
+
+    /* Films à l'affiche (Disposition des films à l'affiche index.html) */
+    .cards {
+
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+
+    }
+
+    /* Cards FILMS À L'AFFICHE index.html*/
+
+    /* Films à l'affiche (Taille, Style, Paramètres concernant les cards des films à l'affiche index.html) */
+    div[class^="section-card"] {
+
+        margin: 0 auto;
+        background-color: white;
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    /* Films à l'affiche (Position du texte dans les affiches de films) */
+    div[class^="section-card"] .inner_section_card_p {
+
+        float: right;
+
+    }
+
+    /* Films à l'affiche (Paramètres de tailles des affiches + infos) */
+    div[class^="section-card"] .inner_section_card {
+
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+
+    /* Films à l'affiche (Paramètres de Tailles et de position des affiches) */
+    div[class^="section-card"] .inner_section_card_image {
+
+        float: left;
+        max-width: 60%;
+        max-height: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    
+    }
+
+    div[class^="section-card"] .rating_card {
+
+        position: relative;
+        padding: 20px 0;
+
+    }
+
+    div[class^="section-card"] .rating_card .fa {
+
+        color: #F7F406;
+        margin-right: 2px;
+        font-size: 16px;
+
+    }
+
+    div[class^="section-card"] .rating_card .rating_card_span {
+
+        color: #0d0d0d;
+        padding: 0 5px;
+
+    }
+
+    div[class^="section-card"] .tags_card {
+
+        position: relative;
+        margin-top: 15px;
+
+    }
+
+    div[class^="section-card"] .tags_card span {
+
+        padding: 2px 5px;
+        margin-right: 2px;
+        color: #FFF;
+        display: inline-block;
+        border-radius: 4px;
+
+    }
+
+    div[class^="section-card"] .tags_card .action {
+
+        background: #ffde59;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 12px;
+
+
+    }
+
+    div[class^="section-card"] .tags_card .aventure {
+
+        background: #ffde59;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 12px;
+
+    }
+
+    div[class^="section-card"] .info_card {
+
+        color: #6c757d;
+        font-style: italic;
+
+    }
+
+    div[class^="section-card"] .info_card .inner_section_card_p {
+
+        margin: 15px 0 10px;
+
+    }
+
+    div[class^="section-card"] .actors_card {
+
+        text-align: center;
+        margin-top: 90%;
+
+    }
+
+    div[class^="section-card"] .actors_card .casting_card  {
+
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #6c757d;
+
+    }
+
+    div[class^="section-card"] .actors_card .actors_card_ul {
+
+        margin: 10px 0 0;
+        padding: 0;
+
+    }
+
+    div[class^="section-card"] .actors_card .actors_card_ul .actors_card_li {
+
+        list-style: none;
+        width: 30px;
+        height: 30px;
+        background: #FFF;
+        border-radius: 50%;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid #FFF;
+
+    }
+
+    div[class^="section-card"] .actors_card .actors_card_ul .actors_card_li .actors_card_img {
+
+        width: 100%;
+
+    }
+
+    /***********************************/
+
+    /* Bouton "VOIR LA PROGRAMMATION"*/
+
+    .button_prog {
+
+        width: 30%;
+        font-size: 10px;
+
+    }
 
 
 }

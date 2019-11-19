@@ -6,15 +6,15 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="initial-scale=1">
-        <!-- Main title -->
+        <!-- Titre de la page -->
         <title>Films en plein air - vivez l'expérience !</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- CSS File -->
+        <!-- CSS -->
         <link rel="stylesheet" href="./css/style.css">
-        <!-- CSS Parallax file -->
+        <!-- CSS Parallax -->
         <link rel="stylesheet" href="./css/parallax.css">
         <!-- Favicon -->
         <link rel="shortcut icon" href="./Images/favicon/favicon.png"/>
@@ -22,46 +22,50 @@
     </head>
 
     <body>
-        <!-- Button who open/close the responsive menu-->
+
+        <!-- Bouton d'ouverture du menu responsive pour mobile -->
         <button class="fdpa-nav-btn fdpa-open-btn">
             <i class="fas fa-bars"></i>
         </button>
-
-        <!-- Responsive menu for Smartphones & Tablets -->
+    
+        <!-- Menu responsive (smartphones/tablettes) -->
         <div class="fdpa-nav fdpa-nav-black">
             <div class="fdpa-nav fdpa-nav-red">
                 <div class="fdpa-nav fdpa-nav-white">
                     <div class="fdpa-nav-container">
-                        <!-- Button who close the responsive menu -->
+
+                        <!-- Bouton de fermeture du menu responsive -->
                         <button class="fdpa-nav-btn fdpa-close-btn">
                             <i class="fa fa-times"></i>
                         </button>
 
+                        <!-- Logo de l'association film de plein air -->
                         <img src="./Images/logo/logo-filmenpleinair.png" class="rounded-circle fdpa-logo" alt="Logo de l'association films de plein air">
 
+                        <!-- Les différentes rubriques du menu -->
                         <ul class="fdpa-list">
-                            <li>
-                                <a href="index.html">Accueil</a>
+                            <li class="fdpa-list-li">
+                                <a class="fdpa-list-a" href="./index.html#accueil">Accueil</a>
                             </li>
 
-                            <li>
-                                <a href="#">À l'affiche</a>
+                            <li class="fdpa-list-li">
+                                <a class="fdpa-list-a" href="./index.html#alaffiche">À l'affiche</a>
                             </li>
 
-                            <li>
-                                <a href="programme.html">Le programme</a>
+                            <li class="fdpa-list-li">
+                                <a class="fdpa-list-a" href="./blog.html">Le programme</a>
                             </li>
 
-                            <li>
-                                <a href="./index.html#reservation">Réservation</a>
+                            <li class="fdpa-list-li">
+                                <a class="fdpa-list-a" href="./index.html#reservation">Réservation</a>
                             </li>
 
-                            <li>
-                                <a href="blog.html">Blog</a>
+                            <li class="fdpa-list-li">
+                                <a class="fdpa-list-a" href="./blog.html">Blog</a>
                             </li>
 
-                            <li>
-                                <a href="./index.html#nouscontacter">Nous contacter</a>
+                            <li class="fdpa-list-li">
+                                <a class="fdpa-list-a" href="./index.html#nouscontacter">Nous contacter</a>
                             </li>
                         </ul>
 
@@ -70,6 +74,7 @@
             </div>
         </div>
 
+        <!-- Caroussel container -->
         <div class="bgimg-1">
             <div id="myCaroussel" class="carousel slide carousel-fade" data-ride="carousel" >    
                     
@@ -132,151 +137,194 @@
 
             </div>
         </div>
-                 
-        <!--Principal container-->
-        <section class="latest-news-area" id="latest">
 
-            <div class="principal-container-blog">  
-                <h1 class="title-blog">Dernières actualités </h1>
-                    <p class="pres-blog">Découvrez toute les dernières nouveautés sur le festival et l'ensemble des informations, nouvelles programmation, installation, organisation ...</p>
+        <!-- Navbar - Menu -->
+        <nav class="navbar navbar-expand-sm justify-content-center">
+            
+            <button class="navbar-toggler" type="button" data-toggle=".content" id="sidebar-toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+             
+            <div class="collapse-center navbar-collapse-center" id="collapsibleNavbar">              
+                <ul class="navbar-nav">
 
-                    
-                <div class="container-blog">
-                    <div class="row-blog">
-                        <div class="col-sm-12">
-                            <div class="section_title">
-                                <div class="section_subtitle"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row-blog">
-                        <div class="news-active">
-                            <div class="col-md-4">
-                                <div class="latest-news-wrap">
-                                    <div class="news-img">
-                                        <img src="./Images/imgs/reservez-votre-place-film-en-plain-air.jpg" class=" img-responsive-blog">
-                                        <div class="deat">
-                                            <span>2</span>
-                                            <span>Novembre</span>
-                                        </div>
-                                    </div>
-                                    <div class="news-content">
-                                        <!--h2 class="title-news">Découvrez la programmation 2020 !</h2-->
-                                        <p>
-                                            Découvrez sans plus tarder la programmation pour l'édition 2020 ! vivez l'éxperience ...
-                                        </p>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                            
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#alaffiche">À l'affiche</a>
+                    </li>
 
-                                        <p>
-                                            <i class="fab fa-facebook-f"></i>
-                                            <i class="fab fa-twitter"></i>
-                                            <i class="fab fa-instagram"></i>
-                                        </p>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">Le Programme</a>
+                    </li>
 
-                                        <a href="">Lire l'article</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#reservation">Réservation</a>
+                    </li>
 
-                                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">Blog</a>
+                    </li>
 
-                                </div>
-                            </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#nouscontacter">Nous contacter</a>
+                    </li>
+                </ul>
 
-                            <div class="col-md-4">
-                                <div class="latest-news-wrap">
-                                    <div class="news-img">
-                                        <img src="./Images/imgs/blog-films-de-plein-air-2.jpg" class="img-responsive-blog">
-                                        <div class="deat">
-                                            <span>31</span>
-                                            <span>Octobre</span>
-                                        </div>
-                                    </div>
-                                    <div class="news-content">
-                                        <!--h2 class="title-news">Nous allons bientôt annoncer le programme 2020 préparez vous !</h2-->
-                                        <p>
-                                            Êtes vous prêt pour réservez votre place ? Pour vivre une expérience inédite ? 
-                                        </p>
-
-                                        <p>
-                                            <i class="fab fa-facebook-f"></i>
-                                            <i class="fab fa-twitter"></i>
-                                            <i class="fab fa-instagram"></i>
-                                        </p>
-
-                                        <a href="">Lire l'article</a>
-
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="latest-news-wrap">
-                                    <div class="news-img">
-                                        <img src="./Images/imgs/films-en-plein-air-paris-monceau-3.jpg" class="img-responsive-blog">
-                                        <div class="deat">
-                                            <span>20</span>
-                                            <span>Octobre</span>
-                                        </div>
-                                    </div>
-                                    <div class="news-content">
-                                        <!--h2 class="title-news" >Comment je réserve ma place pour l'édition 2020 ?</h2-->
-                                        <p>
-                                            Nous vous avons rédiger un petit guide pour les plus novice ! réservez ...
-                                        </p>
-
-                                        <p>
-                                            <i class="fab fa-facebook-f"></i>
-                                            <i class="fab fa-twitter"></i>
-                                            <i class="fab fa-instagram"></i>
-                                        </p>
-
-                                        <a href="">Lire l'article</a>
-
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="latest-news-wrap">
-                                    <div class="news-img">
-                                        <img src="./Images/imgs/food-truck-les-films-de-plein-air.jpg" class="img-responsive-blog">
-                                        <div class="deat">
-                                            <span>8</span>
-                                            <span>Octobre</span>
-                                        </div>
-                                    </div>
-                                    <div class="news-content">
-                                        <!--h2 class="title-news">Nous allons mettre en place des Foods trucks pour l'édition 2020 !</h2-->
-                                        <p>
-                                            Des food truck seront à votre disposition sur le festival, nous avons ...
-                                        </p>
-
-                                        <p>
-                                            <i class="fab fa-facebook-f"></i>
-                                            <i class="fab fa-twitter"></i>
-                                            <i class="fab fa-instagram"></i>
-                                        </p>
-
-                                        <a href="">Lire l'article</a>
-
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
             </div>
-        </section>
-     
-        <!-- footer  -->
-        <div id="footer" class="jumbotron text-center" >
+
+        </nav>
+
+        <div class="under-parallax" >
+
+            <!--Principal container-->
+            <section class="latest-news-area" id="latest">
+
+                <div class="principal-container-blog">  
+                    <h1 class="title-blog">Dernières actualités </h1>
+                        <p class="pres-blog">Découvrez toute les dernières nouveautés sur le festival et l'ensemble des informations, nouvelles programmation, installation, organisation ...</p>
+
+                        
+                    <div class="container-blog">
+                        <div class="row-blog">
+                            <div class="col-sm-12">
+                                <div class="section_title">
+                                    <div class="section_subtitle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row-blog">
+                            <div class="news-active">
+                                <div class="col-md-6">
+                                    <div class="latest-news-wrap">
+                                        <div class="news-img">
+                                            <img src="./Images/imgs/reservez-votre-place-film-en-plain-air.jpg" class=" img-responsive-blog">
+                                            <div class="deat">
+                                                <span class="deat-span">2</span>
+                                                <span class="deat-span">Novembre</span>
+                                            </div>
+                                        </div>
+                                        <div class="news-content">
+                                            <h2 class="title-news">Découvrez la programmation 2020 !</h2>
+                                            <p class="news-content-p">
+                                                Découvrez sans plus tarder la programmation pour l'édition 2020 ! vivez l'éxpérience inédite. Réservez votre place.
+                                            </p>
+
+                                            <p>
+                                                <i class="fab fa-facebook-f"></i>
+                                                <i class="fab fa-twitter"></i>
+                                                <i class="fab fa-instagram"></i>
+                                            </p>
+
+                                            <a class="news-content-a" href="">Lire l'article</a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="latest-news-wrap">
+                                        <div class="news-img">
+                                            <img src="./Images/imgs/films-en-plein-air-paris-monceau-2.jpg" class="img-responsive-blog">
+                                            <div class="deat">
+                                                <span class="deat-span">31</span>
+                                                <span class="deat-span">Octobre</span>
+                                            </div>
+                                        </div>
+                                        <div class="news-content">
+                                            <h2 class="title-news">Nous allons bientôt annoncer le programme 2020 préparez vous !</h2>
+                                            <p class="news-content-p">
+                                                Êtes vous prêt pour réservez votre place ? Pour vivre une expérience inédite ? 
+                                            </p>
+
+                                            <p>
+                                                <i class="fab fa-facebook-f"></i>
+                                                <i class="fab fa-twitter"></i>
+                                                <i class="fab fa-instagram"></i>
+                                            </p>
+
+                                            <a class="news-content-a" href="">Lire l'article</a>
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="latest-news-wrap">
+                                        <div class="news-img">
+                                            <img src="./Images/imgs/films-en-plein-air-paris-monceau-3.jpg" class="img-responsive-blog">
+                                            <div class="deat">
+                                                <span class="deat-span">20</span>
+                                                <span class="deat-span">Octobre</span>
+                                            </div>
+                                        </div>
+                                        <div class="news-content">
+                                            <h2 class="title-news" >Comment je réserve ma place pour l'édition 2020 ?</h2>
+                                            <p class="news-content-p">
+                                                Nous vous avons rédiger un petit guide pour les plus novice ! réservez votre place sans plus attendre !
+                                            </p>
+
+                                            <p>
+                                                <i class="fab fa-facebook-f"></i>
+                                                <i class="fab fa-twitter"></i>
+                                                <i class="fab fa-instagram"></i>
+                                            </p>
+
+                                            <a class="news-content-a" href="">Lire l'article</a>
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="latest-news-wrap">
+                                        <div class="news-img">
+                                            <img src="./Images/imgs/food-truck-les-films-de-plein-air.jpg" class="img-responsive-blog">
+                                            <div class="deat">
+                                                <span class="deat-span">8</span>
+                                                <span class="deat-span">Octobre</span>
+                                            </div>
+                                        </div>
+                                        <div class="news-content">
+                                            <h2 class="title-news">Nous allons mettre en place des Foods trucks pour l'édition 2020 !</h2>
+                                            <p class="news-content-p">
+                                                Des food truck seront à votre disposition sur le festival, nous avons contacter plusieurs professionnel pour cette occasion il y aura du choix !
+                                            </p>
+
+                                            <p>
+                                                <i class="fab fa-facebook-f"></i>
+                                                <i class="fab fa-twitter"></i>
+                                                <i class="fab fa-instagram"></i>
+                                            </p>
+
+                                            <a class="news-content-a" href="">Lire l'article</a>
+
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer jumbotron text-center" >
                         
             <p class="footer-text">COPYRIGHT 2019 - FILMENPLEINAIR || CE SITE À ÉTÉ RÉALISÉ DANS LE CADRE DE LA FORMATION - OPENCLASSROOMS - DÉVELOPPEUR FRONT-END </p>
 
-            <a href="http://www.hugo-muttoni.com">Site réalisé par Hugo Muttoni</a>
+            <a class="author-link" href="http://www.hugo-muttoni.com">Site réalisé par Hugo Muttoni</a>
                 
         </div>
 
