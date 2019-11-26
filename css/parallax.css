@@ -63,9 +63,27 @@ body, html {
     color: #111;
   }
   
-  /* Turn off parallax scrolling for tablets and phones */
+/* Adaptation pour plus petits formats d'écrans */
   @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
     }
+  }
+
+  @media only screen and (max-width: 778px) {
+    .caption span.border {
+      padding: 15px;
+      font-size: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 616px) {
+
+    .caption span.border {
+
+      padding: 15px;
+      font-size: 10px;
+      letter-spacing: 3px;
+    }
+
   }
