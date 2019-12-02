@@ -1087,6 +1087,411 @@ transition: 0.4s;
 
 }
 
+/***********************************/
+
+/**** PROGRAMMATION ****/
+
+.container-fluid.filmlist {
+    padding: 5.0rem;
+}
+
+/* PROGRAMMATION - (Position concernant la date de programmation .date-programmation) */
+.date-programmation {
+
+    padding: 5.0rem;
+
+}
+
+/* PROGRAMMATION - (Position concernant le titre principal de la page "PROGRAMMATION" .title-programmation) */
+.title-programmation {
+
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+
+}
+
+/* PROGRAMMATION - (Position et style concernant le texte sous le titre principal .pres-programmation) */
+.pres-programmation {
+
+    text-align: center;
+    color: #fff;
+
+}
+
+/* PROGRAMMATION - (Paramètres de Style, Label "Séance :" avec l'heure de la projection) */
+.programmation-seance {
+
+    color: #fff;
+
+}
+
+/* PROGRAMMATION - (Paramètres de style de toute la page "PROGRAMMATION") */
+.under-parallax-programmation {
+
+    color: #ddd;
+    background-image: linear-gradient(to right top, #050d37, #041863, #1b1f91, #3d20be, #6712eb);
+    text-align: center;
+    text-align: justify;
+
+}
+
+/* PROGRAMMATION - (Paramètres de style et de position des blocs incluant un titre, une affiche et un texte) */
+div[class^="row movie"] {
+
+    margin-top: 5%;
+    padding-bottom: 5%;
+    background-color: #0D0D0D;
+    border: 1px solid #0D0D0D;
+    color: #fff;
+    height: 120%;
+    border-radius: 5px;
+
+}
+
+/* PROGRAMMATION - (Paramètres de style et de position des titres de films) */
+.title-movie-programmation {
+
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 3%;
+
+}
+
+/* PROGRAMMATION - (Paramètres de style concernant le court résumé pour chaque films) */
+.row-movie-p {
+
+    font-style: italic;
+    word-wrap: break-word;
+
+}
+
+/* PROGRAMMATION - (Paramètres concernant le texte dans .row-movie-details) */
+.row-movie-details {
+
+    word-wrap: break-word;
+    margin-top: 3px;
+
+}
+
+/* PROGRAMMATION - (Paramètres de style concernant les tags .tags-genres .action) */
+.tags-genres .action {
+
+    background: #ffde59;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+
+}
+
+/* PROGRAMMATION - (Paramètres de style concernant les tags .tags-genres .aventure) */
+.tags-genres .aventure {
+    background: #ffde59;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+
+}
+
+/* PROGRAMMATION -  (Paramètres de position concernant les tags .tags-genres span) */
+.tags-genres span {
+
+    margin-top: 1.0rem;
+    padding: 2px 5px;
+    margin-right: 2px;
+    color: #0d0d0d;
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+/* PROGRAMMATION - (Paramètres de position du Label "Nationalité :" avec la nationalité du film) */
+.movie-nationalite {
+
+    margin-top: 1.0rem;
+
+}
+
+
+/***********************************/
+
+/**** BANDEAU AVEC DATE DE LA SÉANCE ****/ 
+
+/* Style du bandeau contenant la date de programmation .bandeau-date */
+.bandeau-date {
+
+    width: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    height: 200px;
+    background-color: #0D0D0D;
+    margin-top: 5%;
+}
+
+/***********************************/
+
+/**** LIEN DES RÉALISATEURS ET ACTEURS ****/
+
+/* Paramètres de style concernant le noms des auteurs et acteurs */
+.link-actors-authors {
+
+    color: #ffde59;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+/* Paramètres de style au survols des liens (acteurs/auteurs) */
+.link-actors-authors:hover {
+
+    text-decoration: none;
+    color: #6712eb;
+    
+}
+
+/***********************************/
+
+/**** SYNOPSIS ET DÉTAILS ****/
+.syn-details {
+
+    color: #ffde59;
+
+}
+
+/***********************************/
+
+/**** NOTATION DU FILM ****/
+
+/* NOTATION DU FILM - (Couleur de remplissage des étoiles, paramètres de style,  .note .fas.fa-star) */
+.note .fas.fa-star {
+
+    color: #F7F406;
+
+}
+
+/* NOTATION DU FILM - (Couleur des étoiles vident, paramètres de style, .note .far.fa-star) */
+.note .far.fa-star {
+
+    color: #F7F406;
+
+}
+
+/***********************************/
+
+/**** BOUTON (Je réserve !) & (En savoir +) ****/
+.btn.btn-custom {
+
+    border: 2px solid #ffde59;
+    color: #ffde59;
+    border-radius: 25px;
+
+}
+
+/***********************************/
+
+/**** PROGRAMMATION DES FILMS ****/
+
+/* FILM - The terminator */
+.movie1 aside {
+
+    background: url(../Images/affiche/the-terminator.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - Retour vers le futur */
+.movie2 aside {
+
+    background: url(../Images/affiche/retour-vers-le-futur.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - Le cinquième élément */
+.movie3 aside {
+
+    background: url(../Images/affiche/cinquieme-element.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - Star wars épisode 1*/
+.movie4 aside {
+
+    background: url(../Images/affiche/star-wars-menace-fantome.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - Jobs */
+.movie5 aside {
+
+    background: url(../Images/affiche/jobs.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - social network */
+.movie6 aside {
+
+    background: url(../Images/affiche/social-network.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - the internship */
+.movie7 aside {
+
+    background: url(../Images/affiche/the-internship.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - Apollo 11 */
+.movie8 aside {
+
+    background: url(../Images/affiche/apollon-11.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - Apollo 11 (Paramètres de style - Lien vers wikipédia) */
+.apollo11-link {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+/* FILM - Apollo 11 (Paramètres de style quand on survol le lien - Lien vers wikipédia) */
+.apollo11-link:hover {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffde59;
+    font-weight: bold;
+
+}
+
+/* FILM - le loup de wall street */
+.movie9 aside {
+
+    background: url(../Images/affiche/le-loup-de-wall-street.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - le fondateur */
+.movie10 aside {
+
+    background: url(../Images/affiche/le-fondateur.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - joy */
+.movie11 aside {
+
+    background: url(../Images/affiche/joy.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - lord of war */
+.movie12 aside {
+
+    background: url(../Images/affiche/lord-of-war.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - étoiles vagabondes */
+.movie13 aside {
+
+    background: url(../Images/affiche/étoiles-vagabondes.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - bohemian rhapsody */
+.movie14 aside {
+
+    background: url(../Images/affiche/bohemian-rhapsody.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - bohemian rhapsody(Paramètres de style - Lien vers wikipédia) */
+.bohemianrhapsody-link {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+/* FILM - bohemian rhapsody (Paramètres de style quand on survol le lien - Lien vers wikipédia) */
+.bohemianrhapsody-link:hover {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffde59;
+    font-weight: bold;
+
+}
+
+/* FILM - this is it */
+.movie15 aside {
+
+    background: url(../Images/affiche/this-is-it.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+/* FILM - notorious */
+.movie16 aside {
+
+    background: url(../Images/affiche/notorious.jpg) no-repeat top;
+    background-size: 100% auto;
+    height: auto;
+    min-height: 200px;
+
+}
+
+
 
 /***********************************/
 
@@ -1496,332 +1901,5 @@ transition: 0.4s;
 
     }
 
-
-}
-
-
-
-
-/* PROGRAMMATION EN CONSTRUCTION */
-
-.container-fluid.filmlist {
-    padding: 5.0rem;
-}
-
-.bandeau-date {
-
-    width: auto;
-    font-family: 'Montserrat', sans-serif;
-    font-size: xx-large;
-    text-align: center;
-    height: 200px;
-    background-color: #0D0D0D;
-    margin-top: 5%;
-}
-
-.date-programmation {
-
-    padding: 5.0rem;
-
-}
-
-.title-programmation {
-
-    text-align: center;
-    padding: 20px;
-    color: #fff;
-
-}
-
-.pres-programmation {
-
-    text-align: center;
-    color: #fff;
-
-}
-
-.programmation-seance {
-
-    color: #fff;
-
-}
-
-.under-parallax-programmation {
-
-    color: #ddd;
-    background-image: linear-gradient(to right top, #050d37, #041863, #1b1f91, #3d20be, #6712eb);
-    text-align: center;
-    text-align: justify;
-
-}
-
-div[class^="row movie"] {
-
-    margin-top: 5%;
-    padding-bottom: 5%;
-    background-color: #0D0D0D;
-    border: 1px solid #0D0D0D;
-    color: #fff;
-    height: 120%;
-    border-radius: 5px;
-
-}
-
-.title-movie-programmation {
-
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 3%;
-
-}
-
-.row-movie-p {
-
-    font-style: italic;
-    word-wrap: break-word;
-
-}
-
-.row-movie-details {
-
-    word-wrap: break-word;
-    margin-top: 3px;
-
-}
-
-.tags-genres .action {
-
-    background: #ffde59;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 12px;
-
-}
-
-.tags-genres .aventure {
-    background: #ffde59;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 12px;
-
-}
-
-.tags-genres span {
-
-    margin-top: 1.0rem;
-    padding: 2px 5px;
-    margin-right: 2px;
-    color: #0d0d0d;
-    display: inline-block;
-    border-radius: 4px;
-
-}
-
-.movie-nationalite {
-
-    margin-top: 1.0rem;
-
-}
-
-/* (Cette class englobe le nom du réalisateur et des acteurs, paramètres de style, .author-actors) */
-.author-actors {
-
-}
-
-.syn-details {
-
-    color: #ffde59;
-
-}
-
-/***********************************/
-
-/**** NOTATION DU FILM ****/
-
-/* NOTATION DU FILM - (Couleur de remplissage des étoiles, paramètres de style,  .note .fas.fa-star) */
-.note .fas.fa-star {
-
-    color: #F7F406;
-
-}
-
-/* NOTATION DU FILM - (Couleur des étoiles vident, paramètres de style, .note .far.fa-star) */
-.note .far.fa-star {
-
-    color: #F7F406;
-
-}
-
-/***********************************/
-
-/**** BOUTON (Je réserve !) & (En savoir +) ****/
-.btn.btn-custom {
-
-    border: 2px solid #ffde59;
-    color: #ffde59;
-    border-radius: 25px;
-
-}
-
- /***********************************/
-
-/**** PROGRAMMATION DES FILMS ****/
-
-/* FILM - The terminator */
-.movie1 aside {
-
-    background: url(../Images/affiche/the-terminator.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - Retour vers le futur */
-.movie2 aside {
-
-    background: url(../Images/affiche/retour-vers-le-futur.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - Le cinquième élément */
-.movie3 aside {
-
-    background: url(../Images/affiche/cinquieme-element.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - Star wars épisode 1*/
-.movie4 aside {
-
-    background: url(../Images/affiche/star-wars-menace-fantome.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - Jobs */
-.movie5 aside {
-
-    background: url(../Images/affiche/jobs.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - social network */
-.movie6 aside {
-
-    background: url(../Images/affiche/social-network.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - the internship */
-.movie7 aside {
-
-    background: url(../Images/affiche/the-internship.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - Apollon 11 */
-.movie8 aside {
-
-    background: url(../Images/affiche/apollon-11.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - le loup de wall street */
-.movie9 aside {
-
-    background: url(../Images/affiche/le-loup-de-wall-street.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - le fondateur */
-.movie10 aside {
-
-    background: url(../Images/affiche/le-fondateur.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - joy */
-.movie11 aside {
-
-    background: url(../Images/affiche/joy.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - lord of war */
-.movie12 aside {
-
-    background: url(../Images/affiche/lord-of-war.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - étoiles vagabondes */
-.movie13 aside {
-
-    background: url(../Images/affiche/étoiles-vagabondes.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - bohemian rhapsody */
-.movie14 aside {
-
-    background: url(../Images/affiche/bohemian-rhapsody.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - bohemian rhapsody */
-.movie15 aside {
-
-    background: url(../Images/affiche/this-is-it.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
-
-}
-
-/* FILM - notorious */
-.movie16 aside {
-
-    background: url(../Images/affiche/notorious.jpg) no-repeat top;
-    background-size: 100% auto;
-    height: auto;
-    min-height: 200px;
 
 }
