@@ -1530,6 +1530,31 @@ div[class^="row movie"] {
 
 }
 
+/* Paramètres lié à la page "programmation" pour smartphones et autres devices de petites taille */
+@media only screen and (max-width: 370px) {
+
+    .title-programmation {
+        font-size: 20px;
+    }
+
+    div[class^="row movie"]{
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .title-movie-programmation {
+        font-size: 20px;
+    }
+
+    .syn-details {
+        display: none;
+    }
+    
+    .container-fluid.filmlist {
+        padding: 0;
+    }
+
+}
 
 
 /* Paramètres pour smartphones et autres devices de petites tailles */
