@@ -13,6 +13,25 @@
 
 }
 
+/* PAGE ACCUEIL (Paramètres de style du lien vers le formulaire dans l'intro film à l'affiche) */
+.link-form-resa {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+/* PAGE ACCEUIL (Paramètres de style du lien vers le formulaire dans l'intro film à l'affiche, au survol de la souris sur le liens) */
+.link-form-resa:hover {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffde59;
+    font-weight: bold;
+
+} 
 
 /* PAGE ACCUEIL (Tous les styles concernant les classes p.principal-intro, p.booking-intro, p.contact-intro, p.faq-intro) */
 .principal-intro,
@@ -912,6 +931,13 @@ transition: 0.4s;
 
 }
 
+.news-active {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
 /* BLOG (Paramètres concernant les articles sur leur style .latest-news-wrap) */
 .latest-news-wrap {
 
@@ -983,7 +1009,6 @@ transition: 0.4s;
 /* BLOG (Container comprenant un court résumé de l'article .news-content) */
 .news-content {
 
-    height: 100%;
     width: 100%;
     padding: 20px;
     margin-left: 3px;
