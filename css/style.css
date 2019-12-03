@@ -1491,6 +1491,26 @@ div[class^="row movie"] {
 
 }
 
+/* FILM - notorious (Paramètres de style - Lien vers wikipédia) */
+.notorious-link {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+/* FILM - notorious (Paramètres de style quand on survol le lien - Lien vers wikipédia) */
+.notorious-link:hover {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffde59;
+    font-weight: bold;
+
+}
+
 
 
 /***********************************/
