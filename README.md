@@ -18,7 +18,7 @@ En tant que développeur, on vous demande de lister les fonctionnalités dont a 
 
 Vous devrez ensuite réaliser une première maquette de ce site correspondant à ses attentes, en utilisant uniquement HTML et CSS.
 
-#Compétences évaluées :
+Compétences évaluées :
 - Lister les fonctionnalités demandées par un client
 - Analyser un cahier des charges
 - Rédiger les spécifications détaillées du projet
